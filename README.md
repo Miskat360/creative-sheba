@@ -4,10 +4,10 @@
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/portfolio.git
+git clone https://github.com/Miskat360/creative-sheba.git
 ```
 ```bash
-cd portfolio
+cd creative-sheba
 ```
 
 **Installation**
