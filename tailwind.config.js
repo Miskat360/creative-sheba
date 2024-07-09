@@ -12,19 +12,33 @@ module.exports = {
       xs: "475px",
       sm: "640px",
       md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      lg: "960px",
+      xl: "1200px",
       "2xl": "1400px",
       "3xl": "1536px",
     },
     container: {
       center: true,
+      padding: {
+          DEFAULT : '15px',
+      },
+    },
+    backgroundImage: {
+      hero: "url('/assets/images/hero/bg2.jpg')",
+      grid: "url('/assets/images/grid.png')",
     },
     extend: {
       colors: {
-        brown: "#CDA274",
-        black1: "#292F36",
-        white1: "#F4F0EC",
+        primary: {
+          DEFAULT: '#292f36',
+          hover: '#343e4a',
+        },
+        secondary: '#4d5053',
+        accent: {
+          DEFAULT: '#cda274',
+          secondary: '#f4f0ec',
+          hover: '#b88c5d',
+        },
       },
     },
   },

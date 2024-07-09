@@ -562,6 +562,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (min-width: 475px){
@@ -582,15 +584,15 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
   .container{
-    max-width: 1024px;
+    max-width: 960px;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1200px){
   .container{
-    max-width: 1280px;
+    max-width: 1200px;
   }
 }
 
@@ -619,14 +621,14 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
   .container{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1200px){
   .container{
     max-width: 82.5rem;
   }
@@ -647,7 +649,7 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
   .h1{
     font-size: 50px;
     line-height: 4.0625rem;
@@ -676,14 +678,14 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
   .h2{
     font-size: 35px;
     line-height: 3.5rem;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1200px){
   .h2{
     font-size: 3rem;
     line-height: 1.25;
@@ -744,7 +746,7 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
   .body-1{
     font-size: 1.25rem;
     line-height: 2rem;
@@ -852,6 +854,10 @@ video {
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .max-w-\[77\.5rem\]{
   max-width: 77.5rem;
 }
@@ -894,6 +900,11 @@ video {
 
 .font-primary{
   font-family: var(--font-primary);
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .text-\[0\.875rem\]{
@@ -986,6 +997,11 @@ video {
   color: rgb(205 162 116 / var(--tw-text-opacity));
 }
 
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1051,7 +1067,7 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
   .lg\:px-14{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -1082,7 +1098,7 @@ video {
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1200px){
   .xl\:max-w-\[82\.5rem\]{
     max-width: 82.5rem;
   }
