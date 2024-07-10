@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+*{
+    font-family: "Jost", sans-serif;
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.animate-slide-down {
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.btn.btn-primary{
+    display: inline-block;
+    color: #fff;
+    background: rgb(239, 31, 38);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: .5s !important;
+}
+.btn.btn-primary i{
+    transition: .5s !important;
+}
+.btn.btn-primary:hover i{
+    margin-left: 4px;
+    font-size: 18px;
+}
+
+.bg-hero{
+    background: url('../images/hero/bg2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}

@@ -23,19 +23,76 @@
     />
     <!-- Swiper -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body class="bg-gray-100">
-    <!-- Page Wrapper -->
-    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
-      <h1 class="h1">Creative Sheba</h1>
-      <!-- Hero Section -->
-      <section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover">
-        <div class="container mx-auto">
-          <!-- Text -->
-          <div>text</div>
+  <body>
+
+    <section class="home-page bg-slate-950 text-white">
+      <!-- -- nav section start -- -->
+      <nav class="sticky top-0 h-[70px] shadow-xl z-30 bg-white">
+        <div class="container mx-auto flex justify-between h-full items-center">
+          <!-- -- logo -- -->
+           <a href="">
+            <img src="assets/images/logo/logo1.png" alt="" class="h-8 w-auto">
+           </a>
+           <!-- nav -->
+            <div>
+              <!-- nav monile triger -->
+               <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+                  <i class="ri-menu-4-line text-4xl text-primary"></i>
+               </div>
+               <!-- nav lg device -->
+              <ul class="fixed w-full h-0 p-0 text-slate-950 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
         </div>
-      </section>
-    </main>
+      </nav>
+    <!-- -- nav section end -- -->
+
+    <!-- Hero Section Start -->
+    <div class="py-10 h-screen bg-hero">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="shadow overflow-hidden sm:rounded-lg w-6/12">
+                <div class="px-4 py-5 sm:p-6">
+                    <!-- Content goes here -->
+                    <h1 class="text-xl font-bold">Welcome to Our Website</h1>
+                    <p class="mt-4 text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac eros nec magna auctor aliquam. In hac habitasse platea dictumst. Nam blandit, nisl eget hendrerit aliquet, justo nunc vehicula quam, non tempus dolor nisi id eros.</p>
+                    <a href="" class="btn btn-primary mx-auto xl:mx-0">Get Start <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section end -->
+
+    <!-- -- steps -- -->
+     <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+      <div class="container mx-auto">
+        <!-- grid item  -->
+         <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+          <div class="bg-pink-400">item 1</div>
+          <div class="bg-pink-400">item 2</div>
+          <div class="bg-pink-400">item 3</div>
+         </div>
+      </div>
+     </section>
+
+
+    <div class="h-[3000px]"></div>
+    </section>
+
+
+
+
+
+
+
     
     <!-- ScrollReveal JS -->
     <script src="assets/js/scrollreveal.min.js"></script>
