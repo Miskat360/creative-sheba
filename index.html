@@ -6,6 +6,11 @@
     <title>Creative Sheba</title>
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav.png"
+      type="image/x-icon"
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -18,41 +23,195 @@
   <body>
     <!-- start navigation bar -->
     <header>
-      <nav></nav>
+      <nav
+        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-2 backdrop-filter backdrop-blur-sm border-b border-black1 hover:bg-white group transition"
+      >
+        <div class="w-[8rem] relative">
+          <a href="/">
+            <img
+              src="assets/images/logo/logo.png"
+              alt="logo"
+              class="w-full group-hover:opacity-0"
+            />
+            <img
+              src="assets/images/logo/logo1.png"
+              alt="logo"
+              class="w-full hidden group-hover:block absolute top-0 pt-1"
+            />
+          </a>
+        </div>
+        <ul
+          class="hidden md:flex gap-10 text-sm font-semibold text-white group-hover:text-gray-800 group-hover:font-medium"
+        >
+          <li><a href="" class="hover:text-black">About us</a></li>
+          <li><a href="" class="hover:text-black">Services</a></li>
+          <li><a href="" class="hover:text-black">Clients</a></li>
+          <li><a href="" class="hover:text-black">Blogs</a></li>
+          <li><a href="" class="hover:text-black">Contacts</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a
+            href=""
+            class="py-2 sm:py-[9px] px-5 bg-white text-black rounded-lg text-[13px] font-bold border group-hover:border-gray-800"
+            >Let's talk</a
+          >
+          <!-- hamburger Menu -->
+          <div
+            id="hamburger_menu"
+            class="md:hidden w-8 h-8 bg-white flex items-center justify-center rounded-full"
+          >
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </nav>
+      <!-- side Navbar -->
+      <div
+        id="sideNavbar"
+        class="fixed top-0 left-0 w-full h-screen z-[10] bg-[rgba(0,0,0,0.5)] hidden"
+      >
+        <div class="bg-white w-[80%] h-full">
+          <div
+            class="flex items-center justify-between pr-2 pt-2 pb-3 border-b"
+          >
+            <a href=""
+              ><img src="assets/images/logo/logo1.png" alt="" class="w-[8rem]"
+            /></a>
+            <!-- side Navbar Close button -->
+            <div
+              id="sideNavbarCloseBtn"
+              class="w-8 h-8 bg-black text-white flex items-center justify-center"
+            >
+              <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+          </div>
+          <ul class="text-sm font-semibold">
+            <li class="border-b py-4 px-6"><a href="">About us</a></li>
+            <li class="border-b py-4 px-6"><a href="">Services</a></li>
+            <li class="border-b py-4 px-6"><a href="">Clients</a></li>
+            <li class="border-b py-4 px-6"><a href="">Blogs</a></li>
+            <li class="border-b py-4 px-6"><a href="">Contacts</a></li>
+          </ul>
+          <!-- social icons -->
+          <div class="flex items-center gap-3 mt-6 justify-center">
+            <a
+              href="https:facebook.com"
+              class="w-10 h-10 text-[13px] flex items-center justify-center rounded-full text-white bg-[#38548E]"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https:twitter.com"
+              class="w-10 h-10 text-xs flex items-center justify-center rounded-full text-white bg-[#1A9BCE]"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https:instagram.com"
+              class="w-10 h-10 text-sm flex items-center justify-center rounded-full text-white bg-[#FA1F73]"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <!-- end social icon -->
+        </div>
+      </div>
+      <!-- end side Navbar -->
     </header>
     <!-- end navigation bar -->
     <!-- start main section -->
     <main>
       <!-- start hero section -->
-      <section class="container">
-        <p class="body-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p class="body-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p class="body-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <h1 class="h1">Heading 1</h1>
-        <h2 class="h2">Heading 2</h2>
-        <h3 class="h3">Heading 3</h3>
-        <h4 class="h4">Heading 4</h4>
-        <h5 class="h5">Heading 5</h5>
-        <h6 class="h6">Heading 6</h6>
-        <div class="inline-block">
-          <a href="" class="btn-primary"
-            >btn primary <i class="fa-solid fa-arrow-right text-brown"></i></a>
-        </div>
-        <div class="inline-block">
-          <a href="" class="btn-secondary"
-            >btn secondary <i class="fa-solid fa-arrow-right text-black1"></i></a>
+      <section
+        class="relative text-white h-screen min-h-screen overflow-x-hidden"
+      >
+        <div class="hero_bg_img relative flex items-center min-h-full z-[1]">
+          <div class="container">
+            <div class="flex lg:flex-row flex-col-reverse lg:gap-0 gap-20">
+              <div class="basis-1/2 flex flex-col justify-center">
+                <h1 class="h1 text-white capitalize mb-4 font-bold">
+                  Empower your business with
+                  <span
+                    style="
+                      background: linear-gradient(
+                        103deg,
+                        rgba(254, 186, 19, 1) 0%,
+                        rgba(206, 35, 225, 1) 100%
+                      );
+                      -webkit-text-fill-color: transparent;
+                      -webkit-background-clip: text;
+                    "
+                    >top-class software development</span
+                  >
+                </h1>
+                <p>
+                  We've created a full-stack structure for our working workflow
+                  processes, were from the funny the century initial all the
+                  made, have spare to negatives
+                </p>
+                <div class="my-8">
+                  <button class="btn">
+                    <a class="" href="/">View Sercice</a>
+                  </button>
+                </div>
+              </div>
+              <div class="basis-1/2">
+                <div
+                  class="w-full flex items-center justify-center lg:pt-10 sm:pt-28 xs:pt-36 pt-40"
+                >
+                  <div class="hero_animation">
+                    <span style="--i: 1">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/blue-1.gif"
+                        alt="not found"
+                      />
+                    </span>
+                    <span style="--i: 2">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/yellow.gif"
+                        alt="not found"
+                      />
+                    </span>
+                    <span style="--i: 3">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/electro.gif"
+                        alt="not found"
+                      />
+                    </span>
+                    <span style="--i: 4">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/orange.gif"
+                        alt="not found"
+                      />
+                    </span>
+                    <span style="--i: 5">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/ambio.gif"
+                        alt="not found"
+                      />
+                    </span>
+                    <span style="--i: 6">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/Mindo.gif"
+                        alt="not found"
+                      />
+                    </span>
+                    <span style="--i: 7">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/bio.gif"
+                        alt="not found"
+                      />
+                    </span>
+                    <span style="--i: 8">
+                      <img
+                        src="https://analyzenbd.com/assets/images/super-heros/blue-2.gif"
+                        alt="not found"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- end hero section -->
-      <section id="about">
-        <div class="container"></div>
-      </section>
     </main>
     <!-- end main section -->
 

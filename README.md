@@ -1,11 +1,12 @@
-## README.md for collaborator
-
+# README.md for collaborator
+📢 don't change or code in input.css and output.css
 ## first --
 **Cloning the Repository**
 
 ```bash
 git clone https://github.com/Miskat360/creative-sheba.git
 ```
+
 ```bash
 cd creative-sheba
 ```
@@ -33,7 +34,7 @@ git switch -C feature/hero-demo
 To run tailwind css paste the command in your terminal:
 
 ```bash
-npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch
+npm run tailwind
 ```
 # fourth --
 When you have finished all the work and your project then run these 3 command to your terminal:
