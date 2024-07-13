@@ -22,6 +22,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: "#131426",
         brown: "#CDA274",
         black1: "#292F36",
         white1: "#F4F0EC",
@@ -33,11 +34,11 @@ module.exports = {
       addBase({});
       addComponents({
         ".container": {
-          "@apply max-w-[77.5rem] px-5 md:px-10 lg:px-14 xl:max-w-[82.5rem]":
+          "@apply max-w-[77.5rem] px-5 md:px-10 lg:px-14 xl:max-w-[82.5rem] py-8 md:py-16":
             {},
         },
         ".h1": {
-          "@apply text-black1 font-heading400 text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[50px] lg:leading-[4.0625rem] 2xl:text-[3.75rem] 2xl:leading-[4.5rem]":
+          "@apply text-black1 font-heading400 text-[2rem] xs:text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[50px] lg:leading-[4.0625rem] 2xl:text-[3.75rem] 2xl:leading-[4.5rem]":
             {},
         },
         ".h2": {
@@ -67,7 +68,7 @@ module.exports = {
           "@apply text-black1 font-primary font-medium text-[0.875rem] leading-6 md:text-base": {},
         },
         ".btn-primary": {
-          "@apply text-white bg-black1 flex items-center gap-2 capitalize tracking-wide text-sm md:text-base font-primary px-5 py-[12px] md:px-8 md:py-[14px] rounded-lg":
+          "@apply text-white bg-black1 flex items-center gap-2 capitalize tracking-wide text-sm md:text-base font-primary px-5 py-[12px] md:px-8 md:py-[14px] rounded-lg hover:bg-black":
             {},
         },
         ".btn-secondary": {
