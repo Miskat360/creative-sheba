@@ -1,15 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Sheba</title>
     <link rel="stylesheet" href="../assets/css/output.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav.png"
+      type="image/x-icon"
+    />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- start navigation bar -->
+    <header>
+      <nav
+        id="navbar"
+        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-2 border-b bg-white"
+      >
+        <div class="w-[8rem]">
+          <a href="/">
+            <img
+              src="../assets/images/logo/logo1.png"
+              alt="logo"
+              class="w-full"
+            />
+          </a>
+        </div>
+        <ul
+          class="hidden md:flex gap-10 text-sm font-semibold"
+        >
+          <li>
+            <a href="./about.html" class="hover:text-black">About us</a>
+          </li>
+          <li>
+            <a href="./services.html" class="hover:text-black">Services</a>
+          </li>
+          <li>
+            <a href="./projects.html" class="hover:text-black">Projects</a>
+          </li>
+          <li><a href="./blogs.html" class="hover:text-black">Blogs</a></li>
+          <li>
+            <a href="./contact.html" class="hover:text-black">Contacts</a>
+          </li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a
+            href=""
+            class="py-2 sm:py-[9px] px-5 bg-white text-black rounded-lg text-[13px] font-bold border hover:border-gray-800 transition duration-300"
+            >Let's talk</a
+          >
+          <!-- hamburger Menu -->
+          <div
+            id="hamburger_menu"
+            class="md:hidden w-8 h-8 bg-white flex items-center justify-center rounded-full"
+          >
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </nav>
+      <!-- side Navbar -->
+      <div
+        id="sideNavbar"
+        class="fixed top-0 left-0 w-full h-screen z-[10] bg-[rgba(0,0,0,0.5)] hidden"
+      >
+        <div class="bg-white w-[80%] h-full">
+          <div
+            class="flex items-center justify-between pr-2 pt-2 pb-3 border-b"
+          >
+            <a href=""
+              ><img src="../assets/images/logo/logo1.png" alt="" class="w-[8rem]"
+            /></a>
+            <!-- side Navbar Close button -->
+            <div
+              id="sideNavbarCloseBtn"
+              class="w-8 h-8 bg-black text-white flex items-center justify-center"
+            >
+              <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+          </div>
+          <ul class="text-sm font-semibold">
+            <li class="border-b py-4 px-6"><a href="./about.html">About us</a></li>
+            <li class="border-b py-4 px-6"><a href="./services.html">Services</a></li>
+            <li class="border-b py-4 px-6"><a href="./projects.html">Projects</a></li>
+            <li class="border-b py-4 px-6"><a href="./blogs.html">Blogs</a></li>
+            <li class="border-b py-4 px-6"><a href="./contact.html">Contacts</a></li>
+          </ul>
+          <!-- social icons -->
+          <div class="flex items-center gap-3 mt-6 justify-center">
+            <a
+              href="https:facebook.com"
+              class="w-10 h-10 text-[13px] flex items-center justify-center rounded-full text-white bg-[#38548E]"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https:twitter.com"
+              class="w-10 h-10 text-xs flex items-center justify-center rounded-full text-white bg-[#1A9BCE]"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https:instagram.com"
+              class="w-10 h-10 text-sm flex items-center justify-center rounded-full text-white bg-[#FA1F73]"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <!-- end social icon -->
+        </div>
+      </div>
+      <!-- end side Navbar -->
+    </header>
+    <!-- end navigation bar -->
+    <!-- start main section -->
+    <main class="pt-[4rem]">
+      <section>
+        <div class="w-full h-[50vh] text-red-800 text-2xl bg-green-700">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, inventore eos facere voluptates adipisci impedit quidem ex quo! Corporis dignissimos reiciendis, ipsum sed ut distinctio ipsa eos odio nam atque?
+        </div>
+      </section>
+    </main>
+    <!-- end main section -->
+
+    <!-- start footer section -->
+    <footer class="bg-[#ecf4ff]">
+      <div class="flex flex-col md:flex-row gap-8 container md:pb-10">
+        <div>
+          <a href=""
+            ><img src="../assets/images/logo/logo1.png" alt="" class="max-w-36"
+          /></a>
+          <p
+            class="max-w-[30rem] mt-5 mb-9 font-semibold text-lg tracking-tight"
+          >
+            Lorem Experience Design Agency focusing on building functional,
+            simple, human-centered digital products for future.
+          </p>
+          <a href="" class="btn-primary inline-block">contact us now</a>
+        </div>
+        <div class="md:ml-auto flex justify-between md:gap-[10rem]">
+          <ul class="flex flex-col gap-2 tracking-tight">
+            <li class="font-semibold mb-2">QUICK LINK</li>
+            <li class="font-medium"><a href="">Home</a></li>
+            <li class="font-medium"><a href="">Work</a></li>
+            <li class="font-medium"><a href="">Contact</a></li>
+            <li class="font-medium"><a href="">Carrer</a></li>
+            <li class="font-medium"><a href="">Blog</a></li>
+          </ul>
+          <ul class="flex flex-col gap-2 tracking-tight">
+            <li class="font-semibold mb-2">SERVICES</li>
+            <li class="font-medium"><a href="">UI/UX Design</a></li>
+            <li class="font-medium"><a href="">Web Design</a></li>
+            <li class="font-medium"><a href="">Branding</a></li>
+            <li class="font-medium"><a href="">Webflow</a></li>
+            <li class="font-medium"><a href="">Mobile App</a></li>
+            <li class="font-medium"><a href="">Saas Design</a></li>
+            <li class="font-medium"><a href="">MVP Development</a></li>
+            <li class="font-medium"><a href="">Design System</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-y">
+        <div class="container md:py-8 flex flex-wrap gap-1 sm:gap-4">
+          <img src="../assets/images/brands/footer-1.webp" alt="" />
+          <img src="../assets/images/brands/footer-2.webp" alt="" />
+          <img src="../assets/images/brands/footer-3.webp" alt="" />
+          <img src="../assets/images/brands/footer-4.webp" alt="" />
+          <img src="../assets/images/brands/footer-5.webp" alt="" />
+          <img src="../assets/images/brands/footer-6.webp" alt="" />
+        </div>
+      </div>
+      <div
+        class="container py-4 flex flex-col gap-3 sm:flex-row items-center justify-between"
+      >
+        <p><a href="">Privacy Policy</a> | &copy; 2024, Creative Sheba ltd.</p>
+        <div class="text-2xl text-black1 flex gap-6">
+          <a href="" class="hover:text-black"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="" class="hover:text-black"
+            ><i class="fa-brands fa-square-x-twitter"></i
+          ></a>
+          <a href="" class="hover:text-black"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

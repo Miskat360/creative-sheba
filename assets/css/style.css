@@ -228,3 +228,10 @@ header .navScrollEfect a img[src="assets/images/logo/logo1.png"]{
     left: 125%;
   }
 }
+.swiper-button-prev::after,
+.swiper-button-next::after{
+font-size: 15px !important;
+}
+.swiper-pagination-bullet{
+  background-color: #131426 !important;
+}

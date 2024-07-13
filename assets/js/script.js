@@ -1,4 +1,4 @@
-function sideNavberOpenClose() {
+const sideNavberOpenClose = () => {
   let sideNavbar = document.querySelector("#sideNavbar");
   document.querySelector("#hamburger_menu").addEventListener("click", () => {
     sideNavbar.classList.remove("hidden");
@@ -11,10 +11,10 @@ function sideNavberOpenClose() {
       sideNavbar.classList.remove("block");
       sideNavbar.classList.add("hidden");
     });
-}
+};
 sideNavberOpenClose();
 
-function topNavbar() {
+const topNavbar = () => {
   let navbar = document.querySelector("#navbar");
 
   window.onscroll = () => {
@@ -27,5 +27,24 @@ function topNavbar() {
       navbar.classList.remove("navScrollEfect");
     }
   };
-}
+};
 topNavbar();
+const feedbackSwiper = () => {
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+};
+feedbackSwiper();

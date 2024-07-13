@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
       rel="shortcut icon"
       href="assets/images/fav.png"
       type="image/x-icon"
@@ -44,11 +48,11 @@
         <ul
           class="hidden md:flex gap-10 text-sm font-semibold text-white group-hover:text-gray-800 group-hover:font-medium"
         >
-          <li><a href="" class="hover:text-black">About us</a></li>
-          <li><a href="" class="hover:text-black">Services</a></li>
-          <li><a href="" class="hover:text-black">Clients</a></li>
-          <li><a href="" class="hover:text-black">Blogs</a></li>
-          <li><a href="" class="hover:text-black">Contacts</a></li>
+          <li><a href="pages/about.html" class="hover:text-black">About us</a></li>
+          <li><a href="pages/services.html" class="hover:text-black">Services</a></li>
+          <li><a href="pages/projects.html" class="hover:text-black">Projects</a></li>
+          <li><a href="pages/blogs.html" class="hover:text-black">Blogs</a></li>
+          <li><a href="pages/contact.html" class="hover:text-black">Contacts</a></li>
         </ul>
         <div class="flex items-center gap-3">
           <a
@@ -213,6 +217,68 @@
         </div>
       </section>
       <!-- end hero section -->
+      <!-- about us -->
+      <section class="bg-[#F5F5FB]">
+        <div class="container flex flex-col lg:flex-row gap-10 lg:gap-4">
+          <div class="lg:basis-1/2 flex flex-col">
+            <div
+              class="bg-[url(../images/spiders.png)] bg-cover bg-center max-w-[60%] self-end z-[1] bg-white p-4 md:px-8 md:py-6"
+            >
+              <h1
+                class="text-[3rem] md:text-[5rem] font-heading400 leading-tight"
+              >
+                5+
+              </h1>
+              <h1 class="text-xl md:text-3xl font-semibold font-heading400">
+                Years of experience in digital solutions
+              </h1>
+            </div>
+            <div class="-mt-16 md:-mt-28 self-end">
+              <img src="assets/images/about/1.jpg" alt="" />
+            </div>
+          </div>
+          <div
+            class="lg:basis-1/2 px-10 md:px-16 flex flex-col justify-center lg:items-start sm:items-end"
+          >
+            <h1 class="h1 text-[#131426] capitalize mb-4 md:mb-8 font-bold">
+              We're City's best
+              <span
+                style="
+                  background: linear-gradient(
+                    103deg,
+                    rgba(254, 186, 19, 1) 0%,
+                    rgba(206, 35, 225, 1) 100%
+                  );
+                  -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
+                "
+                >digital studio</span
+              >
+            </h1>
+            <p class="body-1 tracking-tighter sm:text-end lg:text-start">
+              Our web IT company specializes the professional creation unique
+              sites. Our team constantly monitors the emergence of new
+              technologies that we are not afraid to implement in web projects,
+              making them modern and high-tech. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit.
+            </p>
+            <div class="flex items-center gap-8 md:gap-16 my-6">
+              <h1 class="text-4xl font-heading400 font-semibold">100+</h1>
+              <h1
+                class="text-2xl font-heading400 leading-tight font-semibold text-end lg:text-start"
+              >
+                Clients<br />Satisfactions
+              </h1>
+            </div>
+            <div>
+              <a href="" class="btn-primary inline-block"
+                >Learn More About Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end about us -->
       <!-- services section -->
       <section class="bg-[#F5F5FB]">
         <div class="container">
@@ -618,8 +684,10 @@
       <!-- end blog section -->
       <!-- send email section -->
       <section class="container">
-        <div class="grid grid-cols-3 grid-rows-1 gap-2">
-          <div class="col-span-3 md:col-span-2 bg-black1 rounded-xl md:rounded-3xl py-8 md:py-20 px-4 md:px-16 text-white">
+        <div class="grid grid-cols-3 grid-rows-1 gap-10 lg:gap-2">
+          <div
+            class="col-span-3 lg:col-span-2 bg-black1 rounded-xl md:rounded-3xl py-8 md:py-20 px-4 md:px-16 text-white"
+          >
             <h1 class="h1 text-white capitalize mb-4 md:mb-8 font-bold">
               Let's build something<br />
               <span
@@ -679,7 +747,7 @@
                   />
                 </div>
                 <div class="flex flex-col basis-1/2 font-semibold">
-                  <label for="">Last name</label>
+                  <label for="">Phone number</label>
                   <input
                     type="number"
                     name=""
@@ -701,11 +769,12 @@
                 ></textarea>
               </div>
               <div class="flex flex-col sm:flex-row w-full items-center gap-8">
-                <button
-                  class="bg-gray-200 hover:bg-white text-primary font-bold sm:basis-1/2 text-center py-4 rounded-lg"
+                <a
+                  href=""
+                  class="bg-gray-200 hover:bg-white text-primary font-bold sm:basis-1/2 text-center px-4 py-3 sm:py-4 rounded-lg"
                 >
                   Send request
-                </button>
+                </a>
                 <p class="sm:basis-1/2 text-sm font-light">
                   By sending this form, I confirm that I have read and accepted
                   the <a href="" class="underline">Privacy Policy.</a>
@@ -713,40 +782,187 @@
               </div>
             </form>
           </div>
-          <div class="col-span-3 md:col-span-1 bg-[#f4f4f5] rounded-xl md:rounded-3xl py-8 md:py-20 px-4 md:px-6">
-            <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
-            <p class="text-xl text-primary font-bold tracking-tight py-5">
-              Diffco supplied us with the skilled engineers we needed to meet
-              our ambitious goals. Their account manager proactively addressed
-              concerns, ensuring our expectations were met.
-            </p>
-            <div class="flex items-center gap-4">
-              <img
-                src="assets/images/brands/brand_02.png"
-                alt=""
-                class="max-w-32"
-              />
-              <p class="text-xs flex text-yellow-500">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-              </p>
-              <span class="text-primary font-bold">5.0</span>
-            </div>
-            <div class="flex items-center gap-2 mt-4">
-              <img
-                src="assets/images/testimonial/01.png"
-                alt=""
-                class="scale-[.70]"
-              />
-              <div>
-                <h1 class="text-lg text-primary tracking-tight font-bold">
-                  Pete Gualfetti
-                </h1>
-                <p class="text-sm">Head of Design and Integration</p>
+          <div
+            class="col-span-3 lg:col-span-1 bg-[#f4f4f5] rounded-xl md:rounded-3xl py-8 md:py-20 px-4 md:px-6 relative"
+          >
+            <div class="swiper mySwiper size-full">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i
+                      class="fa-solid fa-quote-right text-gray-300 text-3xl"
+                    ></i>
+                    <p
+                      class="text-xl text-primary font-bold tracking-tight py-5"
+                    >
+                      Diffco supplied us with the skilled engineers we needed to
+                      meet our ambitious goals. Their account manager
+                      proactively addressed concerns, ensuring our expectations
+                      were met.
+                    </p>
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="assets/images/brands/brand_04.png"
+                        alt=""
+                        class="max-w-32"
+                      />
+                      <p class="text-xs flex text-yellow-500">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                      </p>
+                      <span class="text-primary font-bold">5.0</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-4">
+                      <img
+                        src="assets/images/testimonial/01.png"
+                        alt=""
+                        class="scale-[.70]"
+                      />
+                      <div>
+                        <h1
+                          class="text-lg text-primary tracking-tight font-bold"
+                        >
+                          Pete Gualfetti
+                        </h1>
+                        <p class="text-sm">Head of Design and Integration</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <i
+                      class="fa-solid fa-quote-right text-gray-300 text-3xl"
+                    ></i>
+                    <p
+                      class="text-xl text-primary font-bold tracking-tight py-5"
+                    >
+                      Diffco supplied us with the skilled engineers we needed to
+                      meet our ambitious goals. Their account manager
+                      proactively addressed concerns, ensuring our expectations
+                      were met.
+                    </p>
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="assets/images/brands/brand_02.png"
+                        alt=""
+                        class="max-w-32"
+                      />
+                      <p class="text-xs flex text-yellow-500">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                      </p>
+                      <span class="text-primary font-bold">5.0</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-4">
+                      <img
+                        src="assets/images/testimonial/02.png"
+                        alt=""
+                        class="scale-[.70]"
+                      />
+                      <div>
+                        <h1
+                          class="text-lg text-primary tracking-tight font-bold"
+                        >
+                          Pete Gualfetti
+                        </h1>
+                        <p class="text-sm">Head of Design and Integration</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <i
+                      class="fa-solid fa-quote-right text-gray-300 text-3xl"
+                    ></i>
+                    <p
+                      class="text-xl text-primary font-bold tracking-tight py-5"
+                    >
+                      Diffco supplied us with the skilled engineers we needed to
+                      meet our ambitious goals. Their account manager
+                      proactively addressed concerns, ensuring our expectations
+                      were met.
+                    </p>
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="assets/images/brands/brand_03.png"
+                        alt=""
+                        class="max-w-32"
+                      />
+                      <p class="text-xs flex text-yellow-500">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                      </p>
+                      <span class="text-primary font-bold">5.0</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-4">
+                      <img
+                        src="assets/images/testimonial/03.png"
+                        alt=""
+                        class="scale-[.70]"
+                      />
+                      <div>
+                        <h1
+                          class="text-lg text-primary tracking-tight font-bold"
+                        >
+                          Pete Gualfetti
+                        </h1>
+                        <p class="text-sm">Head of Design and Integration</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <i
+                      class="fa-solid fa-quote-right text-gray-300 text-3xl"
+                    ></i>
+                    <p
+                      class="text-xl text-primary font-bold tracking-tight py-5"
+                    >
+                      Diffco supplied us with the skilled engineers we needed to
+                      meet our ambitious goals. Their account manager
+                      proactively addressed concerns, ensuring our expectations
+                      were met.
+                    </p>
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="assets/images/brands/brand_05.png"
+                        alt=""
+                        class="max-w-32"
+                      />
+                      <p class="text-xs flex text-yellow-500">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                      </p>
+                      <span class="text-primary font-bold">5.0</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-4">
+                      <img
+                        src="assets/images/testimonial/04.png"
+                        alt=""
+                        class="scale-[.70]"
+                      />
+                      <div>
+                        <h1
+                          class="text-lg text-primary tracking-tight font-bold"
+                        >
+                          Pete Gualfetti
+                        </h1>
+                        <p class="text-sm">Head of Design and Integration</p>
+                      </div>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-button-prev !size-10 rounded-full !text-white bg-primary !-left-0 lg:!top-[80%]"></div>
+              <div class="swiper-button-next !size-10 rounded-full !text-white bg-primary !-right-0 lg:!top-[80%]"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -802,17 +1018,25 @@
           <img src="assets/images/brands/footer-6.webp" alt="" />
         </div>
       </div>
-      <div class="container py-4 flex flex-col gap-3 sm:flex-row items-center justify-between">
+      <div
+        class="container py-4 flex flex-col gap-3 sm:flex-row items-center justify-between"
+      >
         <p><a href="">Privacy Policy</a> | &copy; 2024, Creative Sheba ltd.</p>
         <div class="text-2xl text-black1 flex gap-6">
-          <a href="" class="hover:text-black"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="" class="hover:text-black"><i class="fa-brands fa-square-x-twitter"></i></a>
-          <a href="" class="hover:text-black"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="" class="hover:text-black"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="" class="hover:text-black"
+            ><i class="fa-brands fa-square-x-twitter"></i
+          ></a>
+          <a href="" class="hover:text-black"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
       </div>
     </footer>
     <!-- end footer section -->
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
