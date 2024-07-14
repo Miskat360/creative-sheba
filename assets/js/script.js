@@ -2,13 +2,11 @@ const sideNavberOpenClose = () => {
   let sideNavbar = document.querySelector("#sideNavbar");
   document.querySelector("#hamburger_menu").addEventListener("click", () => {
     sideNavbar.classList.remove("hidden");
-    sideNavbar.classList.add("block");
   });
 
   document
     .querySelector("#sideNavbarCloseBtn")
     .addEventListener("click", () => {
-      sideNavbar.classList.remove("block");
       sideNavbar.classList.add("hidden");
     });
 };
@@ -29,6 +27,25 @@ const topNavbar = () => {
   };
 };
 topNavbar();
+const megaMenuOpenClose = () => {
+  let navProjectMenu = document.querySelector("#navProjectMenu");
+  console.log(navProjectMenu);
+  let megaMenu = document.querySelector("#megaMenu");
+  navProjectMenu.addEventListener("mouseover", () => {
+    megaMenu.classList.remove("-top-full");
+  });
+  navProjectMenu.addEventListener("mouseout", () => {
+    megaMenu.classList.add("-top-full");
+  });
+  megaMenu.addEventListener("mouseover", () => {
+    megaMenu.classList.remove("-top-full");
+  });
+
+  megaMenu.addEventListener("mouseout", () => {
+    megaMenu.classList.add("-top-full");
+  });
+};
+megaMenuOpenClose();
 const feedbackSwiper = () => {
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,

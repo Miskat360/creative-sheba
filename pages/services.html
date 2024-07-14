@@ -22,10 +22,10 @@
   </head>
   <body>
     <!-- start navigation bar -->
-    <header>
+    <header class="relative">
       <nav
         id="navbar"
-        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-2 border-b bg-white"
+        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-3 border-b bg-white"
       >
         <div class="w-[8rem]">
           <a href="/">
@@ -36,14 +36,17 @@
             />
           </a>
         </div>
-        <ul
-          class="hidden md:flex gap-10 text-sm font-semibold"
-        >
+        <ul class="hidden md:flex gap-10 text-sm font-semibold text-gray-600">
           <li>
             <a href="./about.html" class="hover:text-black">About us</a>
           </li>
           <li>
-            <a href="./services.html" class="hover:text-black">Services</a>
+            <a
+              href="./services.html"
+              id="navProjectMenu"
+              class="hover:text-black"
+              >Services</a
+            >
           </li>
           <li>
             <a href="./projects.html" class="hover:text-black">Projects</a>
@@ -78,7 +81,10 @@
             class="flex items-center justify-between pr-2 pt-2 pb-3 border-b"
           >
             <a href=""
-              ><img src="../assets/images/logo/logo1.png" alt="" class="w-[8rem]"
+              ><img
+                src="../assets/images/logo/logo1.png"
+                alt=""
+                class="w-[8rem]"
             /></a>
             <!-- side Navbar Close button -->
             <div
@@ -89,11 +95,19 @@
             </div>
           </div>
           <ul class="text-sm font-semibold">
-            <li class="border-b py-4 px-6"><a href="./about.html">About us</a></li>
-            <li class="border-b py-4 px-6"><a href="./services.html">Services</a></li>
-            <li class="border-b py-4 px-6"><a href="./projects.html">Projects</a></li>
+            <li class="border-b py-4 px-6">
+              <a href="./about.html">About us</a>
+            </li>
+            <li class="border-b py-4 px-6">
+              <a href="./services.html">Services</a>
+            </li>
+            <li class="border-b py-4 px-6">
+              <a href="./projects.html">Projects</a>
+            </li>
             <li class="border-b py-4 px-6"><a href="./blogs.html">Blogs</a></li>
-            <li class="border-b py-4 px-6"><a href="./contact.html">Contacts</a></li>
+            <li class="border-b py-4 px-6">
+              <a href="./contact.html">Contacts</a>
+            </li>
           </ul>
           <!-- social icons -->
           <div class="flex items-center gap-3 mt-6 justify-center">
@@ -117,20 +131,701 @@
         </div>
       </div>
       <!-- end side Navbar -->
+      <!-- services mega menu -->
+      <div
+        id="megaMenu"
+        class="md:w-full z-50 bg-white fixed -top-full left-0 shadow-lg"
+      >
+        <nav
+          class="w-full z-50 flex items-center justify-between px-10 py-3 border-b bg-white"
+        >
+          <div class="w-[8rem]">
+            <a href="/">
+              <img
+                src="../assets/images/logo/logo1.png"
+                alt="logo"
+                class="w-full"
+              />
+            </a>
+          </div>
+          <ul class="flex gap-10 text-sm font-semibold text-gray-600">
+            <li>
+              <a href="./about.html" class="hover:text-black">About us</a>
+            </li>
+            <li>
+              <a href="./services.html" id="navProjectMenu" class="hover:text-black"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="./projects.html" class="hover:text-black">Projects</a>
+            </li>
+            <li><a href="./blogs.html" class="hover:text-black">Blogs</a></li>
+            <li>
+              <a href="./contact.html" class="hover:text-black">Contacts</a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-3">
+            <a
+              href=""
+              class="py-[9px] px-5 bg-white text-black rounded-lg text-[13px] font-bold border hover:border-gray-800 transition duration-300"
+              >Let's talk</a
+            >
+          </div>
+        </nav>
+        <div class="container flex pt-12 pb-8">
+          <div class="basis-2/5">
+            <h1 class="text-3xl font-bold font-heading400 text-primary">
+              Our Services
+            </h1>
+            <p class="body-3 tracking-tight leading-tight text-gray-600">
+              We provide a comprehensive range of services, from mobile apps to
+              AI-driven solutions - all supplemented by agile management and
+              product consulting expertise.
+            </p>
+          </div>
+          <div class="basis-3/5 pl-8 lg:pl-20 flex gap-10 lg:gap-[14vw]">
+            <ul class="body-3 flex flex-col gap-3">
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Web Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Mobile Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Backend Development</a>
+              </li>
+            </ul>
+            <ul class="body-3 flex flex-col gap-3">
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Forntend Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">AI Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">SEO Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end services mega menu -->
     </header>
     <!-- end navigation bar -->
     <!-- start main section -->
     <main class="pt-[4rem]">
-      <section>
-        <div class="w-full h-[50vh] text-red-800 text-2xl bg-green-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, inventore eos facere voluptates adipisci impedit quidem ex quo! Corporis dignissimos reiciendis, ipsum sed ut distinctio ipsa eos odio nam atque?
+      
+      <!-- services section -->
+      <section class="bg-[#F5F5FB]">
+        <div class="container">
+          <h1
+            class="h1 text-[#131426] capitalize mb-4 md:mb-8 font-bold text-center"
+          >
+            Services we
+            <span
+              style="
+                background: linear-gradient(
+                  103deg,
+                  rgba(254, 186, 19, 1) 0%,
+                  rgba(206, 35, 225, 1) 100%
+                );
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+              "
+              >provide</span
+            >
+          </h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+            >
+              <div class="basis-8/12">
+                <h1 class="h4 font-bold">Web Development</h1>
+                <p class="text-sm pb-3">
+                  Our developers can create web solutions that are tailored to
+                  your needs, easy to manage with popular CMS, and which can be
+                  seamlessly integrated with your existing internal systems.
+                </p>
+                <ul
+                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
+                >
+                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
+                </ul>
+                <div class="flex gap-4 my-3">
+                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
+                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                </div>
+              </div>
+              <div class="basis-4/12">
+                <img
+                  src="../assets/images/services/s-5.png"
+                  alt=""
+                  class="w-[50%] md:w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+            >
+              <div class="basis-8/12">
+                <h1 class="h4 font-bold">Web Development</h1>
+                <p class="text-sm pb-3">
+                  Our developers can create web solutions that are tailored to
+                  your needs, easy to manage with popular CMS, and which can be
+                  seamlessly integrated with your existing internal systems.
+                </p>
+                <ul
+                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
+                >
+                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
+                </ul>
+                <div class="flex gap-4 my-3">
+                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
+                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                </div>
+              </div>
+              <div class="md:basis-4/12 w-full">
+                <img
+                  src="../assets/images/services/s-2.png"
+                  alt=""
+                  class="w-[50%] md:w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+            >
+              <div class="basis-8/12">
+                <h1 class="h4 font-bold">Web Development</h1>
+                <p class="text-sm pb-3">
+                  Our developers can create web solutions that are tailored to
+                  your needs, easy to manage with popular CMS, and which can be
+                  seamlessly integrated with your existing internal systems.
+                </p>
+                <ul
+                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
+                >
+                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
+                </ul>
+                <div class="flex gap-4 my-3">
+                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
+                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                </div>
+              </div>
+              <div class="basis-4/12 w-full">
+                <img
+                  src="../assets/images/services/s-3.png"
+                  alt=""
+                  class="w-[50%] md:w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+            >
+              <div class="basis-8/12">
+                <h1 class="h4 font-bold">Web Development</h1>
+                <p class="text-sm pb-3">
+                  Our developers can create web solutions that are tailored to
+                  your needs, easy to manage with popular CMS, and which can be
+                  seamlessly integrated with your existing internal systems.
+                </p>
+                <ul
+                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
+                >
+                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
+                </ul>
+                <div class="flex gap-4 my-3">
+                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
+                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                </div>
+              </div>
+              <div class="basis-4/12 w-full">
+                <img
+                  src="../assets/images/services/s-4.png"
+                  alt=""
+                  class="w-[50%] md:w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+            >
+              <div class="basis-8/12">
+                <h1 class="h4 font-bold">Web Development</h1>
+                <p class="text-sm pb-3">
+                  Our developers can create web solutions that are tailored to
+                  your needs, easy to manage with popular CMS, and which can be
+                  seamlessly integrated with your existing internal systems.
+                </p>
+                <ul
+                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
+                >
+                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
+                </ul>
+                <div class="flex gap-4 my-3">
+                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
+                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                </div>
+              </div>
+              <div class="basis-4/12">
+                <img
+                  src="../assets/images/services/s-5.png"
+                  alt=""
+                  class="w-[50%] md:w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+            >
+              <div class="basis-8/12">
+                <h1 class="h4 font-bold">Web Development</h1>
+                <p class="text-sm pb-3">
+                  Our developers can create web solutions that are tailored to
+                  your needs, easy to manage with popular CMS, and which can be
+                  seamlessly integrated with your existing internal systems.
+                </p>
+                <ul
+                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
+                >
+                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
+                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
+                </ul>
+                <div class="flex gap-4 my-3">
+                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
+                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                </div>
+              </div>
+              <div class="basis-4/12 w-full">
+                <img
+                  src="../assets/images/services/s-6.png"
+                  alt=""
+                  class="w-[50%] md:w-full"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- end services section -->
+
+      <!-- working process -->
+      <section
+        class="bg-[linear-gradient(180deg,_rgba(245,245,251,1)_42%,_rgba(230,230,250,1)_80%)]"
+      >
+        <div class="flex">
+          <div class="container flex xl:basis-3/5">
+            <div>
+              <p
+                class="inline-block border py-1 px-4 uppercase text-sm font-semibold border-gray-400 rounded-full"
+                style="
+                  background: linear-gradient(
+                    103deg,
+                    rgba(254, 186, 19, 1) 0%,
+                    rgba(206, 35, 225, 1) 100%
+                  );
+                  -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
+                "
+              >
+                processes
+              </p>
+              <h1 class="h1 text-[#131426] capitalize my-6 md:mb-8 font-bold">
+                How we
+                <span
+                  style="
+                    background: linear-gradient(
+                      103deg,
+                      rgba(254, 186, 19, 1) 0%,
+                      rgba(206, 35, 225, 1) 100%
+                    );
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                  "
+                  >build</span
+                >
+              </h1>
+              <div>
+                <div
+                  class="flex flex-col sm:flex-row gap-7 border-t py-5 border-dashed"
+                >
+                  <div>
+                    <img
+                      src="../assets/images/process/icon-1.webp"
+                      alt=""
+                      class="scale-90"
+                    />
+                  </div>
+                  <div>
+                    <h1 class="text-xl font-semibold text-primary">
+                      Discovery stage
+                    </h1>
+                    <p class="mt-3 tracking-tight leading-tight">
+                      We prioritize our clients' success, understanding your
+                      unique needs, and delivering tailored solutions that drive
+                      your business growth.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row gap-7 border-t py-5 border-dashed"
+                >
+                  <div>
+                    <img
+                      src="../assets/images/process/icon-2.png"
+                      alt=""
+                      class="scale-90"
+                    />
+                  </div>
+                  <div>
+                    <h1 class="text-xl font-semibold text-primary">
+                      Development stage
+                    </h1>
+                    <p class="mt-3 tracking-tight leading-tight">
+                      We develop your product in iterative substages, allowing
+                      for regular testing, feedback, and adjustments to ensure
+                      alignment with your expectations.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row gap-7 border-t py-5 border-dashed"
+                >
+                  <div>
+                    <img
+                      src="../assets/images/process/icon-3.png"
+                      alt=""
+                      class="scale-90"
+                    />
+                  </div>
+                  <div>
+                    <h1 class="text-xl font-semibold text-primary">
+                      Continuous development and support
+                    </h1>
+                    <p class="mt-3 tracking-tight leading-tight">
+                      We prioritize our clients' success, understanding your
+                      unique needs, and delivering tailored solutions that drive
+                      your business growth.
+                    </p>
+                  </div>
+                </div>
+                <a href="" class="btn-primary inline-block mt-6">Let's chat</a>
+              </div>
+            </div>
+          </div>
+          <div class="xl:block hidden basis-2/5">
+            <img src="../assets/images/process/process-picture.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="py-10 lg:pt-28 lg:bg-[url(../images/services/works-process-curve-line.png)] bg-contain bg-center bg-no-repeat"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 px-10"
+          >
+            <div class="text-center flex flex-col items-center group">
+              <div
+                class="relative border-2 group-hover:border-gray-900 border-dashed border-white p-2 rounded-full transition-all duration-300"
+              >
+                <h1
+                  class="absolute text-[#1e1e22] -left-[40px] -top-[40px] rotate-[-45deg] text-[4.2rem] font-bold group-hover:-top-[45px] group-hover:-left-[45px] transition-all duration-300"
+                  style="
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 2px;
+                  "
+                >
+                  01
+                </h1>
+                <div
+                  class="bg-gray-800 group-hover:bg-gray-900 w-[6rem] h-[6rem] flex items-center justify-center rounded-full transition-all duration-300"
+                >
+                  <img
+                    src="../assets/images/icon/sv_gray_01.png"
+                    alt=""
+                    class="w-[45%]"
+                  />
+                </div>
+              </div>
+              <div>
+                <h1
+                  class="text-2xl tracking-tight font-bold text-gray-900 mt-2 mb-3"
+                >
+                  Info Gathering
+                </h1>
+                <p class="text-lg font-medium tracking-tight">
+                  Lorem set consectetur adipiscing elit sed eiusmod tempor
+                </p>
+              </div>
+            </div>
+            <div class="text-center flex flex-col items-center group lg:-mt-[4rem]">
+              <div
+                class="relative border-2 group-hover:border-gray-900 border-dashed border-white p-2 rounded-full transition-all duration-300"
+              >
+                <h1
+                  class="absolute text-[#1e1e22] -left-[40px] -top-[40px] rotate-[-45deg] text-[4.2rem] font-bold group-hover:-top-[45px] group-hover:-left-[45px] transition-all duration-300"
+                  style="
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 2px;
+                  "
+                >
+                  02
+                </h1>
+                <div
+                  class="bg-gray-800 group-hover:bg-gray-900 w-[6rem] h-[6rem] flex items-center justify-center rounded-full transition-all duration-300"
+                >
+                  <img
+                    src="../assets/images/icon/sv_gray_02.png"
+                    alt=""
+                    class="w-[45%]"
+                  />
+                </div>
+              </div>
+              <div>
+                <h1
+                  class="text-2xl tracking-tight font-bold text-gray-900 mt-2 mb-3"
+                >
+                  Idea Planning
+                </h1>
+                <p class="text-lg font-medium tracking-tight">
+                  Lorem set consectetur adipiscing elit sed eiusmod tempor
+                </p>
+              </div>
+            </div>
+            <div class="text-center flex flex-col items-center group lg:-mt-4">
+              <div
+                class="relative border-2 group-hover:border-gray-900 border-dashed border-white p-2 rounded-full transition-all duration-300"
+              >
+                <h1
+                  class="absolute text-[#1e1e22] -left-[40px] -top-[40px] rotate-[-45deg] text-[4.2rem] font-bold group-hover:-top-[45px] group-hover:-left-[45px] transition-all duration-300"
+                  style="
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 2px;
+                  "
+                >
+                  03
+                </h1>
+                <div
+                  class="bg-gray-800 group-hover:bg-gray-900 w-[6rem] h-[6rem] flex items-center justify-center rounded-full transition-all duration-300"
+                >
+                  <img
+                    src="../assets/images/icon/sv_gray_03.png"
+                    alt=""
+                    class="w-[45%]"
+                  />
+                </div>
+              </div>
+              <div>
+                <h1
+                  class="text-2xl tracking-tight font-bold text-gray-900 mt-2 mb-3"
+                >
+                  Design Analysis
+                </h1>
+                <p class="text-lg font-medium tracking-tight">
+                  Lorem set consectetur adipiscing elit sed eiusmod tempor
+                </p>
+              </div>
+            </div>
+            <div class="text-center flex flex-col items-center group lg:-mb-1">
+              <div
+                class="relative border-2 group-hover:border-gray-900 border-dashed border-white p-2 rounded-full transition-all duration-300"
+              >
+                <h1
+                  class="absolute text-[#1e1e22] -left-[40px] -top-[40px] rotate-[-45deg] text-[4.2rem] font-bold group-hover:-top-[45px] group-hover:-left-[45px] transition-all duration-300"
+                  style="
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 2px;
+                  "
+                >
+                  04
+                </h1>
+                <div
+                  class="bg-gray-800 group-hover:bg-gray-900 w-[6rem] h-[6rem] flex items-center justify-center rounded-full transition-all duration-300"
+                >
+                  <img
+                    src="../assets/images/icon/sv_gray_04.png"
+                    alt=""
+                    class="w-[45%]"
+                  />
+                </div>
+              </div>
+              <div>
+                <h1
+                  class="text-2xl tracking-tight font-bold text-gray-900 mt-2 mb-3"
+                >
+                  Testing & Lunch
+                </h1>
+                <p class="text-lg font-medium tracking-tight">
+                  Lorem set consectetur adipiscing elit sed eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end working process -->
+      <!-- contact section -->
+      <section
+        class="pt-14 md:pt-16"
+        style="
+          background: rgb(230, 230, 250);
+          background: linear-gradient(
+            180deg,
+            rgba(230, 230, 250, 1) 0%,
+            rgba(236, 244, 255, 1) 100%
+          );
+        "
+      >
+        <div class="container flex flex-col lg:flex-row gap-10 lg:gap-6">
+          <div class="lg:basis-2/5">
+            <p
+              class="inline-block border py-1 px-4 uppercase text-sm font-semibold border-gray-400 rounded-full"
+              style="
+                background: linear-gradient(
+                  103deg,
+                  rgba(254, 186, 19, 1) 0%,
+                  rgba(206, 35, 225, 1) 100%
+                );
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+              "
+            >
+              contact
+            </p>
+            <h1
+              class="text-4xl lg:text-6xl capitalize mb-4 md:mb-8 font-bold py-3 md:py-5"
+            >
+              Let's work<br />
+              <span
+                style="
+                  background: linear-gradient(
+                    103deg,
+                    rgba(254, 186, 19, 1) 0%,
+                    rgba(206, 35, 225, 1) 100%
+                  );
+                  -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
+                "
+                >— together.</span
+              >
+            </h1>
+            <p class="body-1 tracking-tight">We believe in turning ideas into reality and we're ready to join your journey. Reach out to us and let's start discussing your project.</p>
+          </div>
+          <div class="lg:basis-3/5">
+            <form
+              action=""
+              class="flex flex-col gap-10 text-base md:text-lg tracking-tight"
+            >
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">First name</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Jane"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">Last name</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Cooper"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col basis-1/2 font-semibold">
+                <label for=""
+                  >Company name
+                  <span class="text-primary">&lpar;optional&rpar;</span></label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Ex. Tesla Inc"
+                  class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                />
+              </div>
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">Work email</label>
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="you@example.com"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">Phone number</label>
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    placeholder="+1 987654321"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col basis-1/2 font-semibold">
+                <label for=""
+                  >Project details
+                  <span class="text-primary">&lpar;optional&rpar;</span></label
+                >
+                <textarea
+                  name=""
+                  id=""
+                  rows="1"
+                  placeholder="Tell us more about your idea"
+                  class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                ></textarea>
+              </div>
+              <div class="flex flex-col sm:flex-row w-full items-center gap-8">
+                <a
+                  href=""
+                  class="bg-gray-600 text-white hover:bg-gray-700 font-bold sm:basis-1/2 text-center px-4 py-3 sm:py-4 rounded-lg"
+                >
+                  Send request
+                </a>
+                <p class="sm:basis-1/2 text-[15px]">
+                  By sending this form, I confirm that I have read and accepted
+                  the <a href="" class="underline">Privacy Policy.</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- end contact section -->
     </main>
     <!-- end main section -->
 
     <!-- start footer section -->
-    <footer class="bg-[#ecf4ff]">
+    <footer class="bg-[#ecf4ff] border-t">
       <div class="flex flex-col md:flex-row gap-8 container md:pb-10">
         <div>
           <a href=""
@@ -167,13 +862,39 @@
         </div>
       </div>
       <div class="border-y">
-        <div class="container md:py-8 flex flex-wrap gap-1 sm:gap-4">
-          <img src="../assets/images/brands/footer-1.webp" alt="" />
-          <img src="../assets/images/brands/footer-2.webp" alt="" />
-          <img src="../assets/images/brands/footer-3.webp" alt="" />
-          <img src="../assets/images/brands/footer-4.webp" alt="" />
-          <img src="../assets/images/brands/footer-5.webp" alt="" />
-          <img src="../assets/images/brands/footer-6.webp" alt="" />
+        <div
+          class="container md:py-8 flex justify-center lg:justify-start flex-wrap gap-1 sm:gap-4"
+        >
+          <img
+            src="../assets/images/brands/footer-1.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-2.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-3.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-4.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-5.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-6.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
         </div>
       </div>
       <div
@@ -194,6 +915,6 @@
       </div>
     </footer>
     <!-- end footer section -->
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>

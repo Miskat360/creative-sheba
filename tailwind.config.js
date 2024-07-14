@@ -23,7 +23,6 @@ module.exports = {
     extend: {
       colors: {
         primary: "#131426",
-        brown: "#CDA274",
         black1: "#292F36",
         white1: "#F4F0EC",
       },
@@ -72,7 +71,7 @@ module.exports = {
             {},
         },
         ".btn-secondary": {
-          "@apply text-white bg-brown flex items-center gap-2 capitalize tracking-wide text-sm md:text-base font-primary px-5 py-[12px] md:px-8 md:py-[14px] rounded-lg":
+          "@apply text-primary bg-white border border-gray-400 hover:border-gray-900 flex items-center gap-2 capitalize tracking-wide text-sm md:text-base font-primary px-5 py-[12px] md:px-8 md:py-[14px] rounded-lg":
             {},
         },
       });

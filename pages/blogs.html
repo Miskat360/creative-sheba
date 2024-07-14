@@ -22,10 +22,10 @@
   </head>
   <body>
     <!-- start navigation bar -->
-    <header>
+    <header class="relative">
       <nav
         id="navbar"
-        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-2 border-b bg-white"
+        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-3 border-b bg-white"
       >
         <div class="w-[8rem]">
           <a href="/">
@@ -36,14 +36,17 @@
             />
           </a>
         </div>
-        <ul
-          class="hidden md:flex gap-10 text-sm font-semibold"
-        >
+        <ul class="hidden md:flex gap-10 text-sm font-semibold text-gray-600">
           <li>
             <a href="./about.html" class="hover:text-black">About us</a>
           </li>
           <li>
-            <a href="./services.html" class="hover:text-black">Services</a>
+            <a
+              href="./services.html"
+              id="navProjectMenu"
+              class="hover:text-black"
+              >Services</a
+            >
           </li>
           <li>
             <a href="./projects.html" class="hover:text-black">Projects</a>
@@ -78,7 +81,10 @@
             class="flex items-center justify-between pr-2 pt-2 pb-3 border-b"
           >
             <a href=""
-              ><img src="../assets/images/logo/logo1.png" alt="" class="w-[8rem]"
+              ><img
+                src="../assets/images/logo/logo1.png"
+                alt=""
+                class="w-[8rem]"
             /></a>
             <!-- side Navbar Close button -->
             <div
@@ -89,11 +95,19 @@
             </div>
           </div>
           <ul class="text-sm font-semibold">
-            <li class="border-b py-4 px-6"><a href="./about.html">About us</a></li>
-            <li class="border-b py-4 px-6"><a href="./services.html">Services</a></li>
-            <li class="border-b py-4 px-6"><a href="./projects.html">Projects</a></li>
+            <li class="border-b py-4 px-6">
+              <a href="./about.html">About us</a>
+            </li>
+            <li class="border-b py-4 px-6">
+              <a href="./services.html">Services</a>
+            </li>
+            <li class="border-b py-4 px-6">
+              <a href="./projects.html">Projects</a>
+            </li>
             <li class="border-b py-4 px-6"><a href="./blogs.html">Blogs</a></li>
-            <li class="border-b py-4 px-6"><a href="./contact.html">Contacts</a></li>
+            <li class="border-b py-4 px-6">
+              <a href="./contact.html">Contacts</a>
+            </li>
           </ul>
           <!-- social icons -->
           <div class="flex items-center gap-3 mt-6 justify-center">
@@ -117,15 +131,91 @@
         </div>
       </div>
       <!-- end side Navbar -->
+      <!-- services mega menu -->
+      <div
+        id="megaMenu"
+        class="md:w-full z-50 bg-white fixed -top-full left-0 shadow-lg"
+      >
+        <nav
+          class="w-full z-50 flex items-center justify-between px-10 py-3 border-b bg-white"
+        >
+          <div class="w-[8rem]">
+            <a href="/">
+              <img
+                src="../assets/images/logo/logo1.png"
+                alt="logo"
+                class="w-full"
+              />
+            </a>
+          </div>
+          <ul class="flex gap-10 text-sm font-semibold text-gray-600">
+            <li>
+              <a href="./about.html" class="hover:text-black">About us</a>
+            </li>
+            <li>
+              <a href="./services.html" id="navProjectMenu" class="hover:text-black"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="./projects.html" class="hover:text-black">Projects</a>
+            </li>
+            <li><a href="./blogs.html" class="hover:text-black">Blogs</a></li>
+            <li>
+              <a href="./contact.html" class="hover:text-black">Contacts</a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-3">
+            <a
+              href=""
+              class="py-[9px] px-5 bg-white text-black rounded-lg text-[13px] font-bold border hover:border-gray-800 transition duration-300"
+              >Let's talk</a
+            >
+          </div>
+        </nav>
+        <div class="container flex pt-12 pb-8">
+          <div class="basis-2/5">
+            <h1 class="text-3xl font-bold font-heading400 text-primary">
+              Our Services
+            </h1>
+            <p class="body-3 tracking-tight leading-tight text-gray-600">
+              We provide a comprehensive range of services, from mobile apps to
+              AI-driven solutions - all supplemented by agile management and
+              product consulting expertise.
+            </p>
+          </div>
+          <div class="basis-3/5 pl-8 lg:pl-20 flex gap-10 lg:gap-[14vw]">
+            <ul class="body-3 flex flex-col gap-3">
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Web Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Mobile Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Backend Development</a>
+              </li>
+            </ul>
+            <ul class="body-3 flex flex-col gap-3">
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Forntend Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">AI Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">SEO Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end services mega menu -->
     </header>
     <!-- end navigation bar -->
     <!-- start main section -->
     <main class="pt-[4rem]">
-      <section>
-        <div class="w-full h-[50vh] text-red-800 text-2xl bg-green-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, inventore eos facere voluptates adipisci impedit quidem ex quo! Corporis dignissimos reiciendis, ipsum sed ut distinctio ipsa eos odio nam atque?
-        </div>
-      </section>
+      
     </main>
     <!-- end main section -->
 
@@ -167,13 +257,13 @@
         </div>
       </div>
       <div class="border-y">
-        <div class="container md:py-8 flex flex-wrap gap-1 sm:gap-4">
-          <img src="../assets/images/brands/footer-1.webp" alt="" />
-          <img src="../assets/images/brands/footer-2.webp" alt="" />
-          <img src="../assets/images/brands/footer-3.webp" alt="" />
-          <img src="../assets/images/brands/footer-4.webp" alt="" />
-          <img src="../assets/images/brands/footer-5.webp" alt="" />
-          <img src="../assets/images/brands/footer-6.webp" alt="" />
+        <div class="container md:py-8 flex justify-center lg:justify-start flex-wrap gap-1 sm:gap-4">
+          <img src="../assets/images/brands/footer-1.webp" alt="" class="sm:w-auto w-[45%]"/>
+          <img src="../assets/images/brands/footer-2.webp" alt="" class="sm:w-auto w-[45%]"/>
+          <img src="../assets/images/brands/footer-3.webp" alt="" class="sm:w-auto w-[45%]"/>
+          <img src="../assets/images/brands/footer-4.webp" alt="" class="sm:w-auto w-[45%]"/>
+          <img src="../assets/images/brands/footer-5.webp" alt="" class="sm:w-auto w-[45%]"/>
+          <img src="../assets/images/brands/footer-6.webp" alt="" class="sm:w-auto w-[45%]"/>
         </div>
       </div>
       <div
@@ -194,6 +284,6 @@
       </div>
     </footer>
     <!-- end footer section -->
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>

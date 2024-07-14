@@ -22,10 +22,10 @@
   </head>
   <body>
     <!-- start navigation bar -->
-    <header>
+    <header class="relative">
       <nav
         id="navbar"
-        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-2 border-b bg-white"
+        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-3 border-b bg-white"
       >
         <div class="w-[8rem]">
           <a href="/">
@@ -36,14 +36,17 @@
             />
           </a>
         </div>
-        <ul
-          class="hidden md:flex gap-10 text-sm font-semibold"
-        >
+        <ul class="hidden md:flex gap-10 text-sm font-semibold text-gray-600">
           <li>
             <a href="./about.html" class="hover:text-black">About us</a>
           </li>
           <li>
-            <a href="./services.html" class="hover:text-black">Services</a>
+            <a
+              href="./services.html"
+              id="navProjectMenu"
+              class="hover:text-black"
+              >Services</a
+            >
           </li>
           <li>
             <a href="./projects.html" class="hover:text-black">Projects</a>
@@ -78,7 +81,10 @@
             class="flex items-center justify-between pr-2 pt-2 pb-3 border-b"
           >
             <a href=""
-              ><img src="../assets/images/logo/logo1.png" alt="" class="w-[8rem]"
+              ><img
+                src="../assets/images/logo/logo1.png"
+                alt=""
+                class="w-[8rem]"
             /></a>
             <!-- side Navbar Close button -->
             <div
@@ -89,11 +95,19 @@
             </div>
           </div>
           <ul class="text-sm font-semibold">
-            <li class="border-b py-4 px-6"><a href="./about.html">About us</a></li>
-            <li class="border-b py-4 px-6"><a href="./services.html">Services</a></li>
-            <li class="border-b py-4 px-6"><a href="./projects.html">Projects</a></li>
+            <li class="border-b py-4 px-6">
+              <a href="./about.html">About us</a>
+            </li>
+            <li class="border-b py-4 px-6">
+              <a href="./services.html">Services</a>
+            </li>
+            <li class="border-b py-4 px-6">
+              <a href="./projects.html">Projects</a>
+            </li>
             <li class="border-b py-4 px-6"><a href="./blogs.html">Blogs</a></li>
-            <li class="border-b py-4 px-6"><a href="./contact.html">Contacts</a></li>
+            <li class="border-b py-4 px-6">
+              <a href="./contact.html">Contacts</a>
+            </li>
           </ul>
           <!-- social icons -->
           <div class="flex items-center gap-3 mt-6 justify-center">
@@ -117,13 +131,294 @@
         </div>
       </div>
       <!-- end side Navbar -->
+      <!-- services mega menu -->
+      <div
+        id="megaMenu"
+        class="md:w-full z-50 bg-white fixed -top-full left-0 shadow-lg"
+      >
+        <nav
+          class="w-full z-50 flex items-center justify-between px-10 py-3 border-b bg-white"
+        >
+          <div class="w-[8rem]">
+            <a href="/">
+              <img
+                src="../assets/images/logo/logo1.png"
+                alt="logo"
+                class="w-full"
+              />
+            </a>
+          </div>
+          <ul class="flex gap-10 text-sm font-semibold text-gray-600">
+            <li>
+              <a href="./about.html" class="hover:text-black">About us</a>
+            </li>
+            <li>
+              <a href="./services.html" id="navProjectMenu" class="hover:text-black"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="./projects.html" class="hover:text-black">Projects</a>
+            </li>
+            <li><a href="./blogs.html" class="hover:text-black">Blogs</a></li>
+            <li>
+              <a href="./contact.html" class="hover:text-black">Contacts</a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-3">
+            <a
+              href=""
+              class="py-[9px] px-5 bg-white text-black rounded-lg text-[13px] font-bold border hover:border-gray-800 transition duration-300"
+              >Let's talk</a
+            >
+          </div>
+        </nav>
+        <div class="container flex pt-12 pb-8">
+          <div class="basis-2/5">
+            <h1 class="text-3xl font-bold font-heading400 text-primary">
+              Our Services
+            </h1>
+            <p class="body-3 tracking-tight leading-tight text-gray-600">
+              We provide a comprehensive range of services, from mobile apps to
+              AI-driven solutions - all supplemented by agile management and
+              product consulting expertise.
+            </p>
+          </div>
+          <div class="basis-3/5 pl-8 lg:pl-20 flex gap-10 lg:gap-[14vw]">
+            <ul class="body-3 flex flex-col gap-3">
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Web Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Mobile Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Backend Development</a>
+              </li>
+            </ul>
+            <ul class="body-3 flex flex-col gap-3">
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">Forntend Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">AI Development</a>
+              </li>
+              <li class="hover:text-black transition-all duration-300">
+                <a href="">SEO Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end services mega menu -->
     </header>
     <!-- end navigation bar -->
     <!-- start main section -->
     <main class="pt-[4rem]">
+      <section class="pt-14 md:pt-16">
+        <div class="container flex flex-col lg:flex-row gap-10 lg:gap-6">
+          <div class="lg:basis-4/6">
+            <p
+              class="inline-block border py-1 px-4 uppercase text-sm font-semibold border-gray-400 rounded-full"
+              style="
+                background: linear-gradient(
+                  103deg,
+                  rgba(254, 186, 19, 1) 0%,
+                  rgba(206, 35, 225, 1) 100%
+                );
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+              "
+            >
+              contact
+            </p>
+            <h1
+              class="text-4xl lg:text-6xl capitalize mb-4 md:mb-8 font-bold py-3 md:py-5"
+            >
+              Let's work<br />
+              <span
+                style="
+                  background: linear-gradient(
+                    103deg,
+                    rgba(254, 186, 19, 1) 0%,
+                    rgba(206, 35, 225, 1) 100%
+                  );
+                  -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
+                "
+                >— together.</span
+              >
+            </h1>
+            <form
+              action=""
+              class="flex flex-col gap-10 text-base md:text-lg tracking-tight"
+            >
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">First name</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Jane"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">Last name</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Cooper"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col basis-1/2 font-semibold">
+                <label for=""
+                  >Company name
+                  <span class="text-primary">&lpar;optional&rpar;</span></label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Ex. Tesla Inc"
+                  class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                />
+              </div>
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">Work email</label>
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="you@example.com"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+                <div class="flex flex-col basis-1/2 font-semibold">
+                  <label for="">Phone number</label>
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    placeholder="+1 987654321"
+                    class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col basis-1/2 font-semibold">
+                <label for=""
+                  >Project details
+                  <span class="text-primary">&lpar;optional&rpar;</span></label
+                >
+                <textarea
+                  name=""
+                  id=""
+                  rows="1"
+                  placeholder="Tell us more about your idea"
+                  class="bg-transparent border-b-2 border-black outline-none pt-1 text-xl font-heading400 font-light"
+                ></textarea>
+              </div>
+              <div class="flex flex-col sm:flex-row w-full items-center gap-8">
+                <a
+                  href=""
+                  class="bg-gray-600 text-white hover:bg-gray-700 font-bold sm:basis-1/2 text-center px-4 py-3 sm:py-4 rounded-lg"
+                >
+                  Send request
+                </a>
+                <p class="sm:basis-1/2 text-[15px]">
+                  By sending this form, I confirm that I have read and accepted
+                  the <a href="" class="underline">Privacy Policy.</a>
+                </p>
+              </div>
+            </form>
+          </div>
+          <div
+            class="lg:basis-2/6 flex flex-col md:flex-row lg:flex-col gap-6 pt-10 lg:pt-20"
+          >
+            <div class="flex gap-4 md:gap-6 bg-gray-500 text-white py-10 px-8">
+              <div
+                class="bg-gray-400 w-14 h-14 flex items-center justify-center text-2xl rounded-full"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="basis-4/6">
+                <p class="text-sm">WORK ADDRESS</p>
+                <h4 class="text-xl">Joypurhat Tower, Rampura, Dhaka 1219</h4>
+              </div>
+            </div>
+            <div class="flex gap-4 md:gap-6 bg-gray-500 text-white py-10 px-8">
+              <div
+                class="bg-gray-400 w-14 h-14 flex items-center justify-center text-2xl rounded-full"
+              >
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="basis-4/6">
+                <p class="text-sm">EMAIL ADDRESS</p>
+                <h4 class="text-xl">contact@creative.com</h4>
+              </div>
+            </div>
+            <div class="flex gap-4 md:gap-6 bg-gray-500 text-white py-10 px-8">
+              <div
+                class="bg-gray-400 w-14 h-14 flex items-center justify-center text-2xl rounded-full"
+              >
+                <i class="fa-solid fa-phone-flip"></i>
+              </div>
+              <div class="basis-4/6">
+                <p class="text-sm">PHONE NUMBER</p>
+                <h4 class="text-xl">Call +1 98765-4321</h4>
+              </div>
+            </div>
+            <div class="border border-gray-400">
+              <h1
+                class="text-2xl border-b border-gray-400 text-center py-2 font-semibold"
+              >
+                Follow Us
+              </h1>
+              <div class="flex items-center justify-center py-6 gap-4">
+                <a
+                  href=""
+                  class="w-14 h-14 bg-gray-400 hover:bg-gray-500 transition-all duration-300 flex items-center justify-center rounded-full"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  href=""
+                  class="w-14 h-14 bg-gray-400 hover:bg-gray-500 transition-all duration-300 flex items-center justify-center rounded-full"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href=""
+                  class="w-14 h-14 bg-gray-400 hover:bg-gray-500 transition-all duration-300 flex items-center justify-center rounded-full"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  href=""
+                  class="w-14 h-14 bg-gray-400 hover:bg-gray-500 transition-all duration-300 flex items-center justify-center rounded-full"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
-        <div class="w-full h-[50vh] text-red-800 text-2xl bg-green-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, inventore eos facere voluptates adipisci impedit quidem ex quo! Corporis dignissimos reiciendis, ipsum sed ut distinctio ipsa eos odio nam atque?
+        <div class="container">
+          <div class="w-full h-[60vh] lg:h-[70vh]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29194.589642429204!2d90.42691141816799!3d23.842636434960088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c94b4492908d%3A0xda9fb76cf55c6c18!2sOllyo!5e0!3m2!1sen!2sbd!4v1720950117109!5m2!1sen!2sbd"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="size-full"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -167,13 +462,39 @@
         </div>
       </div>
       <div class="border-y">
-        <div class="container md:py-8 flex flex-wrap gap-1 sm:gap-4">
-          <img src="../assets/images/brands/footer-1.webp" alt="" />
-          <img src="../assets/images/brands/footer-2.webp" alt="" />
-          <img src="../assets/images/brands/footer-3.webp" alt="" />
-          <img src="../assets/images/brands/footer-4.webp" alt="" />
-          <img src="../assets/images/brands/footer-5.webp" alt="" />
-          <img src="../assets/images/brands/footer-6.webp" alt="" />
+        <div
+          class="container md:py-8 flex justify-center lg:justify-start flex-wrap gap-1 sm:gap-4"
+        >
+          <img
+            src="../assets/images/brands/footer-1.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-2.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-3.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-4.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-5.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
+          <img
+            src="../assets/images/brands/footer-6.webp"
+            alt=""
+            class="sm:w-auto w-[45%]"
+          />
         </div>
       </div>
       <div
@@ -194,6 +515,6 @@
       </div>
     </footer>
     <!-- end footer section -->
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
