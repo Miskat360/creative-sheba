@@ -4,5 +4,12 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.4"
-  }
+  },
+  "name": "creative-sheba",
+  "version": "1.0.0",
+  "description": "📢 don't change or code in input.css and output.css\r ## first --\r **Cloning the Repository**",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
