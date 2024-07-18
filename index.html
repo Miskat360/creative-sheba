@@ -24,55 +24,48 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="bg-black text-white">
     <!-- start navigation bar -->
     <header class="relative">
       <nav
         id="navbar"
-        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-2 backdrop-filter backdrop-blur-sm border-b border-black1 hover:bg-white group transition"
+        class="w-full fixed top-0 left-0 right-0 z-[9] flex items-center justify-between px-2 sm:px-10 py-2 backdrop-filter backdrop-blur-sm border-b border-black1 hover:bg-black transition"
       >
         <div class="w-[8rem] relative">
           <a href="/">
             <img
               src="assets/images/logo/logo.png"
               alt="logo"
-              class="w-full group-hover:opacity-0"
-            />
-            <img
-              src="assets/images/logo/logo1.png"
-              alt="logo"
-              class="w-full hidden group-hover:block absolute top-0 pt-1"
+              class="w-full"
             />
           </a>
         </div>
         <ul
-          class="hidden md:flex gap-10 text-sm font-semibold text-white group-hover:text-gray-800 group-hover:font-medium"
+          class="hidden md:flex gap-10 text-sm font-semibold text-gray-300"
         >
           <li>
-            <a href="pages/about.html" class="hover:text-black">About us</a>
+            <a href="pages/about.html" class="hover:text-white">About us</a>
           </li>
           <li>
             <a
               href="pages/services.html"
               id="navProjectMenu"
-              class="hover:text-black"
+              class="hover:text-white"
               >Services</a
             >
           </li>
           <li>
-            <a href="pages/projects.html" class="hover:text-black">Projects</a>
+            <a href="pages/projects.html" class="hover:text-white">Projects</a>
           </li>
-          <li><a href="pages/blogs.html" class="hover:text-black">Blogs</a></li>
+          <li><a href="pages/blogs.html" class="hover:text-white">Blogs</a></li>
           <li>
-            <a href="pages/contact.html" class="hover:text-black">Contacts</a>
+            <a href="pages/contact.html" class="hover:text-white">Contacts</a>
           </li>
         </ul>
         <div class="flex items-center gap-3">
-          <a
-            href=""
-            class="py-2 sm:py-[9px] px-5 bg-white text-black rounded-lg text-[13px] font-bold border group-hover:border-gray-800"
-            >Let's talk</a
-          >
+          <button class="btn !w-28 !h-10 text-xs !my-0">
+            <a href="" class="!capitalize">Let's Talk</a>
+          </button>
           <!-- hamburger Menu -->
           <div
             id="hamburger_menu"
@@ -144,54 +137,57 @@
       <!-- services mega menu -->
       <div
         id="megaMenu"
-        class="md:w-full z-50 bg-white fixed -top-full left-0 shadow-lg"
+        class="md:w-full z-50 bg-black fixed -top-full left-0 shadow-lg"
       >
         <nav
-          class="w-full z-50 flex items-center justify-between px-10 py-3 border-b bg-white"
+          class="w-full z-50 flex items-center justify-between px-10 py-2 border-b border-black1 bg-black"
         >
           <div class="w-[8rem]">
             <a href="/">
               <img
-                src="./assets/images/logo/logo1.png"
+                src="./assets/images/logo/logo.png"
                 alt="logo"
                 class="w-full"
               />
             </a>
           </div>
-          <ul class="flex gap-10 text-sm font-semibold text-gray-600">
+          <ul class="flex gap-10 text-sm font-semibold text-gray-300">
             <li>
-              <a href="pages/about.html" class="hover:text-black">About us</a>
+              <a href="pages/about.html" class="hover:text-white">About us</a>
             </li>
             <li>
               <a
                 href="pages/services.html"
                 id="navProjectMenu"
-                class="hover:text-black"
+                class="hover:text-white"
                 >Services</a
               >
             </li>
             <li>
-              <a href="pages/projects.html" class="hover:text-black">Projects</a>
+              <a href="pages/projects.html" class="hover:text-white"
+                >Projects</a
+              >
             </li>
-            <li><a href="pages/blogs.html" class="hover:text-black">Blogs</a></li>
             <li>
-              <a href="pages/contact.html" class="hover:text-black">Contacts</a>
+              <a href="pages/blogs.html" class="hover:text-white">Blogs</a>
+            </li>
+            <li>
+              <a href="pages/contact.html" class="hover:text-white">Contacts</a>
             </li>
           </ul>
           <div class="flex items-center gap-3">
-            <a
-              href=""
-              class="py-[9px] px-5 bg-white text-black rounded-lg text-[13px] font-bold border hover:border-gray-800 transition duration-300"
-              >Let's talk</a
-            >
+            <button class="btn !w-28 !h-10 text-xs !my-0">
+              <a href="" class="!capitalize">Let's Talk</a>
+            </button>
           </div>
         </nav>
+        <div class="border-b border-black1">
         <div class="container flex pt-12 pb-8">
           <div class="basis-2/5">
-            <h1 class="text-3xl font-bold font-heading400 text-primary">
+            <h1 class="text-3xl font-bold font-heading400 text-gray-100">
               Our Services
             </h1>
-            <p class="body-3 tracking-tight leading-tight text-gray-600">
+            <p class="body-3 tracking-tight leading-tight text-gray-200 font-light">
               We provide a comprehensive range of services, from mobile apps to
               AI-driven solutions - all supplemented by agile management and
               product consulting expertise.
@@ -199,28 +195,29 @@
           </div>
           <div class="basis-3/5 pl-8 lg:pl-20 flex gap-10 lg:gap-[14vw]">
             <ul class="body-3 flex flex-col gap-3">
-              <li class="hover:text-black transition-all duration-300">
+              <li class="hover:text-white transition-all duration-300">
                 <a href="">Web Development</a>
               </li>
-              <li class="hover:text-black transition-all duration-300">
+              <li class="hover:text-white transition-all duration-300">
                 <a href="">Mobile Development</a>
               </li>
-              <li class="hover:text-black transition-all duration-300">
+              <li class="hover:text-white transition-all duration-300">
                 <a href="">Backend Development</a>
               </li>
             </ul>
             <ul class="body-3 flex flex-col gap-3">
-              <li class="hover:text-black transition-all duration-300">
+              <li class="hover:text-white transition-all duration-300">
                 <a href="">Forntend Development</a>
               </li>
-              <li class="hover:text-black transition-all duration-300">
+              <li class="hover:text-white transition-all duration-300">
                 <a href="">AI Development</a>
               </li>
-              <li class="hover:text-black transition-all duration-300">
+              <li class="hover:text-white transition-all duration-300">
                 <a href="">SEO Service</a>
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </div>
       <!-- end services mega menu -->
@@ -324,11 +321,15 @@
       </section>
       <!-- end hero section -->
       <!-- about us -->
-      <section class="bg-[#F5F5FB]">
-        <div class="container flex flex-col lg:flex-row gap-10 lg:gap-4">
-          <div class="lg:basis-1/2 flex flex-col">
+      <section>
+        <div class="container flex flex-col lg:flex-row gap-10 lg:gap-4 lg:pt-24">
+          <div class="lg:basis-1/2 flex flex-col relative">
+            
+            <div class="self-end">
+              <img src="assets/images/about/about.webp" alt="" />
+            </div>
             <div
-              class="bg-[url(../images/spiders.png)] bg-cover bg-center max-w-[60%] self-end z-[1] bg-white p-4 md:px-8 md:py-6"
+              class="bg-[url(../images/spiders.png)] bg-cover bg-center max-w-[60%] self-end z-[1] backdrop-filter backdrop-blur-sm p-4 md:px-8 md:py-6 absolute bottom-0"
             >
               <h1
                 class="text-[3rem] md:text-[5rem] font-heading400 leading-tight"
@@ -339,14 +340,11 @@
                 Years of experience in digital solutions
               </h1>
             </div>
-            <div class="-mt-16 md:-mt-28 self-end">
-              <img src="assets/images/about/1.jpg" alt="" />
-            </div>
           </div>
           <div
             class="lg:basis-1/2 px-10 md:px-16 flex flex-col justify-center lg:items-start sm:items-end"
           >
-            <h1 class="h1 text-[#131426] capitalize mb-4 md:mb-8 font-bold">
+            <h1 class="h1 text-zinc-200 capitalize mb-4 md:mb-8 font-bold">
               We're City's best
               <span
                 style="
@@ -377,19 +375,19 @@
               </h1>
             </div>
             <div>
-              <a href="" class="btn-primary inline-block"
-                >Learn More About Us</a
-              >
+              <button class="btn">
+                <a href="">Learn More</a>
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- end about us -->
       <!-- services section -->
-      <section class="bg-[#F5F5FB]">
+      <section>
         <div class="container">
           <h1
-            class="h1 text-[#131426] capitalize mb-4 md:mb-8 font-bold text-center"
+            class="h1 text-zinc-200 capitalize mb-4 md:mb-8 font-bold text-center"
           >
             Services we
             <span
@@ -405,28 +403,25 @@
               >provide</span
             >
           </h1>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div
-              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-black shadow-[0_0_8px_0_gray] flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
             >
               <div class="basis-8/12">
-                <h1 class="h4 font-bold">Web Development</h1>
+                <h1 class="h4">Web Development</h1>
                 <p class="text-sm pb-3">
                   Our developers can create web solutions that are tailored to
                   your needs, easy to manage with popular CMS, and which can be
                   seamlessly integrated with your existing internal systems.
                 </p>
-                <ul
-                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
-                >
-                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
-                </ul>
                 <div class="flex gap-4 my-3">
-                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
-                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                  <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Let's chat</a>
+                  </button>
+                  </button>
+                  <!-- <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Learn More</a>
+                  </button> -->
                 </div>
               </div>
               <div class="basis-4/12">
@@ -438,26 +433,23 @@
               </div>
             </div>
             <div
-              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-black shadow-[0_0_8px_0_gray] flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
             >
               <div class="basis-8/12">
-                <h1 class="h4 font-bold">Web Development</h1>
+                <h1 class="h4">Web Development</h1>
                 <p class="text-sm pb-3">
                   Our developers can create web solutions that are tailored to
                   your needs, easy to manage with popular CMS, and which can be
                   seamlessly integrated with your existing internal systems.
                 </p>
-                <ul
-                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
-                >
-                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
-                </ul>
                 <div class="flex gap-4 my-3">
-                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
-                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                  <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Let's chat</a>
+                  </button>
+                  </button>
+                  <!-- <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Learn More</a>
+                  </button> -->
                 </div>
               </div>
               <div class="md:basis-4/12 w-full">
@@ -469,29 +461,26 @@
               </div>
             </div>
             <div
-              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-black shadow-[0_0_8px_0_gray] flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
             >
               <div class="basis-8/12">
-                <h1 class="h4 font-bold">Web Development</h1>
+                <h1 class="h4">Web Development</h1>
                 <p class="text-sm pb-3">
                   Our developers can create web solutions that are tailored to
                   your needs, easy to manage with popular CMS, and which can be
                   seamlessly integrated with your existing internal systems.
                 </p>
-                <ul
-                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
-                >
-                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
-                </ul>
                 <div class="flex gap-4 my-3">
-                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
-                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                  <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Let's chat</a>
+                  </button>
+                  </button>
+                  <!-- <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Learn More</a>
+                  </button> -->
                 </div>
               </div>
-              <div class="basis-4/12 w-full">
+              <div class="md:basis-4/12 w-full">
                 <img
                   src="assets/images/services/s-3.png"
                   alt=""
@@ -500,29 +489,26 @@
               </div>
             </div>
             <div
-              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-black shadow-[0_0_8px_0_gray] flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
             >
               <div class="basis-8/12">
-                <h1 class="h4 font-bold">Web Development</h1>
+                <h1 class="h4">Web Development</h1>
                 <p class="text-sm pb-3">
                   Our developers can create web solutions that are tailored to
                   your needs, easy to manage with popular CMS, and which can be
                   seamlessly integrated with your existing internal systems.
                 </p>
-                <ul
-                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
-                >
-                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
-                </ul>
                 <div class="flex gap-4 my-3">
-                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
-                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                  <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Let's chat</a>
+                  </button>
+                  </button>
+                  <!-- <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Learn More</a>
+                  </button> -->
                 </div>
               </div>
-              <div class="basis-4/12 w-full">
+              <div class="md:basis-4/12 w-full">
                 <img
                   src="assets/images/services/s-4.png"
                   alt=""
@@ -531,29 +517,26 @@
               </div>
             </div>
             <div
-              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-black shadow-[0_0_8px_0_gray] flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
             >
               <div class="basis-8/12">
-                <h1 class="h4 font-bold">Web Development</h1>
+                <h1 class="h4">Web Development</h1>
                 <p class="text-sm pb-3">
                   Our developers can create web solutions that are tailored to
                   your needs, easy to manage with popular CMS, and which can be
                   seamlessly integrated with your existing internal systems.
                 </p>
-                <ul
-                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
-                >
-                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
-                </ul>
                 <div class="flex gap-4 my-3">
-                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
-                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                  <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Let's chat</a>
+                  </button>
+                  </button>
+                  <!-- <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Learn More</a>
+                  </button> -->
                 </div>
               </div>
-              <div class="basis-4/12">
+              <div class="md:basis-4/12 w-full">
                 <img
                   src="assets/images/services/s-5.png"
                   alt=""
@@ -562,29 +545,26 @@
               </div>
             </div>
             <div
-              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-white shadow-xl flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
+              class="hover:bg-[url('../images/spiders.png')] bg-cover py-6 px-8 bg-black shadow-[0_0_8px_0_gray] flex flex-col-reverse md:flex-row items-center rounded-2xl bg-center transition-all duration-500"
             >
               <div class="basis-8/12">
-                <h1 class="h4 font-bold">Web Development</h1>
+                <h1 class="h4">Web Development</h1>
                 <p class="text-sm pb-3">
                   Our developers can create web solutions that are tailored to
                   your needs, easy to manage with popular CMS, and which can be
                   seamlessly integrated with your existing internal systems.
                 </p>
-                <ul
-                  class="flex flex-wrap items-center gap-1 md:gap-5 capitalize text-xs py-2"
-                >
-                  <li class="bg-slate-100 rounded-full px-3 py-1">react</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">angular</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">php</li>
-                  <li class="bg-slate-100 rounded-full px-3 py-1">laravel</li>
-                </ul>
                 <div class="flex gap-4 my-3">
-                  <a href="" class="btn-primary py-2 px-5">Let's chat</a>
-                  <a href="" class="btn-secondary py-2 px-5">Learn More</a>
+                  <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Let's chat</a>
+                  </button>
+                  </button>
+                  <!-- <button class="btn !w-32 !h-10 text-xs">
+                    <a href="" class="!capitalize">Learn More</a>
+                  </button> -->
                 </div>
               </div>
-              <div class="basis-4/12 w-full">
+              <div class="md:basis-4/12 w-full">
                 <img
                   src="assets/images/services/s-6.png"
                   alt=""
@@ -614,7 +594,7 @@
             >
               processes
             </p>
-            <h1 class="h1 text-[#131426] capitalize my-6 md:mb-8 font-bold">
+            <h1 class="h1 text-zinc-200 capitalize my-6 md:mb-8 font-bold">
               How we
               <span
                 style="
@@ -635,13 +615,13 @@
               >
                 <div>
                   <img
-                    src="assets/images/process/icon-1.webp"
+                    src="assets/images/icon/sb_icon_01.png"
                     alt=""
                     class="scale-90"
                   />
                 </div>
                 <div>
-                  <h1 class="text-xl font-semibold text-primary">
+                  <h1 class="text-xl font-semibold">
                     Discovery stage
                   </h1>
                   <p class="mt-3 tracking-tight leading-tight">
@@ -656,13 +636,13 @@
               >
                 <div>
                   <img
-                    src="assets/images/process/icon-2.png"
+                    src="assets/images/icon/sb_icon_04.png"
                     alt=""
                     class="scale-90"
                   />
                 </div>
                 <div>
-                  <h1 class="text-xl font-semibold text-primary">
+                  <h1 class="text-xl font-semibold">
                     Development stage
                   </h1>
                   <p class="mt-3 tracking-tight leading-tight">
@@ -677,13 +657,13 @@
               >
                 <div>
                   <img
-                    src="assets/images/process/icon-3.png"
+                    src="assets/images/icon/sb_icon_02.png"
                     alt=""
                     class="scale-90"
                   />
                 </div>
                 <div>
-                  <h1 class="text-xl font-semibold text-primary">
+                  <h1 class="text-xl font-semibold">
                     Continuous development and support
                   </h1>
                   <p class="mt-3 tracking-tight leading-tight">
@@ -693,7 +673,9 @@
                   </p>
                 </div>
               </div>
-              <a href="" class="btn-primary inline-block mt-6">Let's chat</a>
+              <button class="btn">
+                <a href="">Let's chat</a>
+              </button>
             </div>
           </div>
         </div>
@@ -706,7 +688,7 @@
       <section>
         <div class="container">
           <h1
-            class="h1 text-[#131426] capitalize mb-4 md:mb-8 font-bold text-center"
+            class="h1 text-zinc-200 capitalize mb-4 md:mb-8 font-bold text-center"
           >
             Products we developed are
             <span
@@ -723,30 +705,35 @@
             >
           </h1>
           <div
-            class="flex flex-wrap items-center justify-center gap-8 md:gap-16"
+            class="flex flex-wrap items-center justify-center gap-4 md:gap-6"
           >
             <img
-              src="assets/images/brands/brand_01.png"
+              src="assets/images/brands/footer-1.webp"
               alt=""
               class="w-[40%] xs:w-auto"
             />
             <img
-              src="assets/images/brands/brand_02.png"
+              src="assets/images/brands/footer-2.webp"
               alt=""
               class="w-[40%] xs:w-auto"
             />
             <img
-              src="assets/images/brands/brand_03.png"
+              src="assets/images/brands/footer-3.webp"
               alt=""
               class="w-[40%] xs:w-auto"
             />
             <img
-              src="assets/images/brands/brand_04.png"
+              src="assets/images/brands/footer-4.webp"
               alt=""
               class="w-[40%] xs:w-auto"
             />
             <img
-              src="assets/images/brands/brand_05.png"
+              src="assets/images/brands/footer-5.webp"
+              alt=""
+              class="w-[40%] xs:w-auto"
+            />
+            <img
+              src="assets/images/brands/footer-6.webp"
               alt=""
               class="w-[40%] xs:w-auto"
             />
@@ -758,7 +745,7 @@
       <section>
         <div class="container">
           <h1
-            class="h1 text-[#131426] capitalize mb-4 md:mb-8 font-bold text-center"
+            class="h1 text-zinc-200 capitalize mb-4 md:mb-8 font-bold text-center"
           >
             Browse our latest
             <span
@@ -776,7 +763,7 @@
           </h1>
           <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
             <!-- grid blog 1 -->
-            <div>
+            <div class="overflow-hidden border border-black1">
               <!-- blog img -->
               <div class="blog-img cursor-pointer overflow-hidden">
                 <figure class="relative">
@@ -784,24 +771,24 @@
                 </figure>
               </div>
               <!-- blog body -->
-              <div class="py-4">
+              <div class="p-4">
                 <!-- blog date & mini-link -->
                 <div class="flex justify-between">
-                  <p class="text-[10px] text-black1">
+                  <p class="text-[11px] text-white tracking-wider">
                     <span>figma</span>, <span>Adobe XD</span>,
                     <span>Sketch</span>,
                     <span>InVision</span>
                   </p>
-                  <p class="text-[10px] text-black1">September 6, 2023</p>
+                  <p class="text-[11px] text-white">September 6, 2023</p>
                 </div>
                 <!-- blog title -->
                 <a
                   href="/"
-                  class="text-primary hover:text-blue3 font-bold tracking-tight"
+                  class="text-zinc-200 font-semibold text-lg"
                   >Post Format Image</a
                 >
                 <!-- blog discription -->
-                <p class="text-sm leading-[1.7] text-black1 mt-2 mb-3">
+                <p class="text-sm leading-[1.7] text-zinc-100 mt-2 mb-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque pretium velit nec risus consectetur, vel cursus
                   odio congue.
@@ -809,11 +796,11 @@
                 <!-- blog button -->
                 <div class="inline-block">
                   <a href="/" class="flex items-center gap-2 text-sm group">
-                    <span class="font-bold group-hover:text-black text-primary"
+                    <span class="font-semibold group-hover:text-white text-zinc-300"
                       >Read More</span
                     >
                     <div
-                      class="bg-primary group-hover:bg-black text-white w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-2"
+                      class="bg-zinc-300 group-hover:bg-white text-black w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-2"
                     >
                       <i class="fa-solid fa-angle-right"></i>
                     </div>
@@ -821,8 +808,8 @@
                 </div>
               </div>
             </div>
-            <!-- grid blog 2 -->
-            <div>
+            <!-- grid blog 1 -->
+            <div class="overflow-hidden border border-black1">
               <!-- blog img -->
               <div class="blog-img cursor-pointer overflow-hidden">
                 <figure class="relative">
@@ -830,24 +817,24 @@
                 </figure>
               </div>
               <!-- blog body -->
-              <div class="py-4">
+              <div class="p-4">
                 <!-- blog date & mini-link -->
                 <div class="flex justify-between">
-                  <p class="text-[10px] text-black1">
+                  <p class="text-[11px] text-white tracking-wider">
                     <span>figma</span>, <span>Adobe XD</span>,
                     <span>Sketch</span>,
                     <span>InVision</span>
                   </p>
-                  <p class="text-[10px] text-black1">September 6, 2023</p>
+                  <p class="text-[11px] text-white">September 6, 2023</p>
                 </div>
                 <!-- blog title -->
                 <a
                   href="/"
-                  class="text-primary hover:text-blue3 font-bold tracking-tight"
+                  class="text-zinc-200 font-semibold text-lg"
                   >Post Format Image</a
                 >
                 <!-- blog discription -->
-                <p class="text-sm leading-[1.7] text-black1 mt-2 mb-3">
+                <p class="text-sm leading-[1.7] text-zinc-100 mt-2 mb-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque pretium velit nec risus consectetur, vel cursus
                   odio congue.
@@ -855,11 +842,11 @@
                 <!-- blog button -->
                 <div class="inline-block">
                   <a href="/" class="flex items-center gap-2 text-sm group">
-                    <span class="font-bold group-hover:text-black text-primary"
+                    <span class="font-semibold group-hover:text-white text-zinc-300"
                       >Read More</span
                     >
                     <div
-                      class="bg-primary group-hover:bg-black text-white w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-2"
+                      class="bg-zinc-300 group-hover:bg-white text-black w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-2"
                     >
                       <i class="fa-solid fa-angle-right"></i>
                     </div>
@@ -867,8 +854,8 @@
                 </div>
               </div>
             </div>
-            <!-- grid blog 3 -->
-            <div>
+            <!-- grid blog 1 -->
+            <div class="overflow-hidden border border-black1">
               <!-- blog img -->
               <div class="blog-img cursor-pointer overflow-hidden">
                 <figure class="relative">
@@ -876,24 +863,24 @@
                 </figure>
               </div>
               <!-- blog body -->
-              <div class="py-4">
+              <div class="p-4">
                 <!-- blog date & mini-link -->
                 <div class="flex justify-between">
-                  <p class="text-[10px] text-black1">
+                  <p class="text-[11px] text-white tracking-wider">
                     <span>figma</span>, <span>Adobe XD</span>,
                     <span>Sketch</span>,
                     <span>InVision</span>
                   </p>
-                  <p class="text-[10px] text-black1">September 6, 2023</p>
+                  <p class="text-[11px] text-white">September 6, 2023</p>
                 </div>
                 <!-- blog title -->
                 <a
                   href="/"
-                  class="text-primary hover:text-blue3 font-bold tracking-tight"
+                  class="text-zinc-200 font-semibold text-lg"
                   >Post Format Image</a
                 >
                 <!-- blog discription -->
-                <p class="text-sm leading-[1.7] text-black1 mt-2 mb-3">
+                <p class="text-sm leading-[1.7] text-zinc-100 mt-2 mb-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque pretium velit nec risus consectetur, vel cursus
                   odio congue.
@@ -901,11 +888,11 @@
                 <!-- blog button -->
                 <div class="inline-block">
                   <a href="/" class="flex items-center gap-2 text-sm group">
-                    <span class="font-bold group-hover:text-black text-primary"
+                    <span class="font-semibold group-hover:text-white text-zinc-300"
                       >Read More</span
                     >
                     <div
-                      class="bg-primary group-hover:bg-black text-white w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-2"
+                      class="bg-zinc-300 group-hover:bg-white text-black w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-2"
                     >
                       <i class="fa-solid fa-angle-right"></i>
                     </div>
@@ -915,227 +902,151 @@
             </div>
           </div>
           <div class="flex items-center justify-center mt-5">
-            <a href="" class="btn-primary">See all blogs</a>
+            <button class="btn">
+              <a href="">See all blogs</a>
+            </button>
           </div>
         </div>
       </section>
       <!-- end blog section -->
-      <!-- send email section -->
-      <section class="container">
-        <div class="grid grid-cols-3 grid-rows-1 gap-10 lg:gap-2">
-          <div
-            class="col-span-3 lg:col-span-2 bg-black1 rounded-xl md:rounded-3xl py-8 md:py-20 px-4 md:px-16 text-white"
+       <!-- contact section -->
+      <section class="pt-14 md:pt-16">
+      <div class="container flex flex-col lg:flex-row gap-10 lg:gap-6">
+        <div class="lg:basis-2/5">
+          <p
+            class="inline-block border py-1 px-4 uppercase text-sm font-semibold border-gray-400 rounded-full"
+            style="
+              background: linear-gradient(
+                103deg,
+                rgba(254, 186, 19, 1) 0%,
+                rgba(206, 35, 225, 1) 100%
+              );
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;
+            "
           >
-            <h1 class="h1 text-white capitalize mb-4 md:mb-8 font-bold">
-              Let's build something<br />
-              <span
-                style="
-                  background: linear-gradient(
-                    103deg,
-                    rgba(254, 186, 19, 1) 0%,
-                    rgba(206, 35, 225, 1) 100%
-                  );
-                  -webkit-text-fill-color: transparent;
-                  -webkit-background-clip: text;
-                "
-                >great together.</span
-              >
-            </h1>
-            <form action="" class="flex flex-col gap-10">
-              <div class="flex flex-col md:flex-row gap-4">
-                <div class="flex flex-col basis-1/2 font-semibold">
-                  <label for="">First name</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    class="bg-transparent border-b outline-none pb-1"
-                  />
-                </div>
-                <div class="flex flex-col basis-1/2 font-semibold">
-                  <label for="">Last name</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    class="bg-transparent border-b outline-none pb-1"
-                  />
-                </div>
-              </div>
+            contact
+          </p>
+          <h1
+            class="text-4xl lg:text-6xl capitalize mb-4 md:mb-8 font-bold py-3 md:py-5"
+          >
+            Let's work<br />
+            <span
+              style="
+                background: linear-gradient(
+                  103deg,
+                  rgba(254, 186, 19, 1) 0%,
+                  rgba(206, 35, 225, 1) 100%
+                );
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+              "
+              >— together.</span
+            >
+          </h1>
+          <p class="body-1 tracking-tight">We believe in turning ideas into reality and we're ready to join your journey. Reach out to us and let's start discussing your project.</p>
+        </div>
+        <div class="lg:basis-3/5">
+          <form
+            action=""
+            class="flex flex-col gap-10 text-base md:text-lg tracking-tight"
+          >
+            <div class="flex flex-col md:flex-row gap-4">
               <div class="flex flex-col basis-1/2 font-semibold">
-                <label for=""
-                  >Company name
-                  <span class="text-primary">&lpar;optional&rpar;</span></label
-                >
+                <label for="">First name</label>
                 <input
                   type="text"
                   name=""
                   id=""
-                  class="bg-transparent border-b outline-none pb-1"
+                  placeholder="Jane"
+                  class="bg-transparent border-b border-white outline-none pt-1 text-xl font-heading400 font-light"
                 />
               </div>
-              <div class="flex flex-col md:flex-row gap-4">
-                <div class="flex flex-col basis-1/2 font-semibold">
-                  <label for="">Work email</label>
-                  <input
-                    type="email"
-                    name=""
-                    id=""
-                    class="bg-transparent border-b outline-none pb-1"
-                  />
-                </div>
-                <div class="flex flex-col basis-1/2 font-semibold">
-                  <label for="">Phone number</label>
-                  <input
-                    type="number"
-                    name=""
-                    id=""
-                    class="bg-transparent border-b outline-none pb-1"
-                  />
-                </div>
-              </div>
               <div class="flex flex-col basis-1/2 font-semibold">
-                <label for=""
-                  >Tell us about your project
-                  <span class="text-primary">&lpar;optional&rpar;</span></label
-                >
-                <textarea
+                <label for="">Last name</label>
+                <input
+                  type="text"
                   name=""
                   id=""
-                  rows="1"
-                  class="bg-transparent border-b outline-none pb-1"
-                ></textarea>
+                  placeholder="Cooper"
+                  class="bg-transparent border-b border-white outline-none pt-1 text-xl font-heading400 font-light"
+                />
               </div>
-              <div class="flex flex-col sm:flex-row w-full items-center gap-8">
-                <a
-                  href=""
-                  class="bg-gray-200 hover:bg-white text-primary font-bold sm:basis-1/2 text-center px-4 py-3 sm:py-4 rounded-lg"
-                >
-                  Send request
-                </a>
-                <p class="sm:basis-1/2 text-sm font-light">
-                  By sending this form, I confirm that I have read and accepted
-                  the <a href="" class="underline">Privacy Policy.</a>
-                </p>
+            </div>
+            <div class="flex flex-col basis-1/2 font-semibold">
+              <label for=""
+                >Company name
+                <span class="text-zinc-500">&lpar;optional&rpar;</span></label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Ex. Tesla Inc"
+                class="bg-transparent border-b border-white outline-none pt-1 text-xl font-heading400 font-light"
+              />
+            </div>
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="flex flex-col basis-1/2 font-semibold">
+                <label for="">Work email</label>
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="you@example.com"
+                  class="bg-transparent border-b border-white outline-none pt-1 text-xl font-heading400 font-light"
+                />
               </div>
-            </form>
-          </div>
+              <div class="flex flex-col basis-1/2 font-semibold">
+                <label for="">Phone number</label>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="+1 987654321"
+                  class="bg-transparent border-b border-white outline-none pt-1 text-xl font-heading400 font-light"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col basis-1/2 font-semibold">
+              <label for=""
+                >Project details
+                <span class="text-zinc-500">&lpar;optional&rpar;</span></label
+              >
+              <textarea
+                name=""
+                id=""
+                rows="1"
+                placeholder="Tell us more about your idea"
+                class="bg-transparent border-b border-white outline-none pt-1 text-xl font-heading400 font-light"
+              ></textarea>
+            </div>
+            <div class="flex flex-col sm:flex-row w-full items-center gap-8">
+              <div class="sm:basis-1/2">
+              <button class="btn !my-0">
+                <a href="" class="!capitalize">send request</a>
+              </button>
+              </div>
+              <p class="sm:basis-1/2 text-[15px]">
+                By sending this form, I confirm that I have read and accepted
+                the <a href="" class="underline">Privacy Policy.</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end contact section -->
+      <!-- client feedback section -->
+      <section class="container">
           <div
-            class="col-span-3 lg:col-span-1 bg-[#f4f4f5] rounded-xl md:rounded-3xl py-8 md:py-20 px-4 md:px-6 relative"
+            class="shadow-[0_0_8px_0_gray] rounded-xl md:rounded-3xl py-8 md:py-20 px-4 md:px-6 relative"
           >
             <div class="swiper mySwiper size-full">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
-                  <p class="text-xl text-primary font-bold tracking-tight py-5">
-                    Diffco supplied us with the skilled engineers we needed to
-                    meet our ambitious goals. Their account manager proactively
-                    addressed concerns, ensuring our expectations were met.
-                  </p>
-                  <div class="flex items-center gap-4">
-                    <img
-                      src="assets/images/brands/brand_04.png"
-                      alt=""
-                      class="max-w-32"
-                    />
-                    <p class="text-xs flex text-yellow-500">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </p>
-                    <span class="text-primary font-bold">5.0</span>
-                  </div>
-                  <div class="flex items-center gap-2 mt-4">
-                    <img
-                      src="assets/images/testimonial/01.png"
-                      alt=""
-                      class="scale-[.70]"
-                    />
-                    <div>
-                      <h1 class="text-lg text-primary tracking-tight font-bold">
-                        Pete Gualfetti
-                      </h1>
-                      <p class="text-sm">Head of Design and Integration</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
-                  <p class="text-xl text-primary font-bold tracking-tight py-5">
-                    Diffco supplied us with the skilled engineers we needed to
-                    meet our ambitious goals. Their account manager proactively
-                    addressed concerns, ensuring our expectations were met.
-                  </p>
-                  <div class="flex items-center gap-4">
-                    <img
-                      src="assets/images/brands/brand_02.png"
-                      alt=""
-                      class="max-w-32"
-                    />
-                    <p class="text-xs flex text-yellow-500">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </p>
-                    <span class="text-primary font-bold">5.0</span>
-                  </div>
-                  <div class="flex items-center gap-2 mt-4">
-                    <img
-                      src="assets/images/testimonial/02.png"
-                      alt=""
-                      class="scale-[.70]"
-                    />
-                    <div>
-                      <h1 class="text-lg text-primary tracking-tight font-bold">
-                        Pete Gualfetti
-                      </h1>
-                      <p class="text-sm">Head of Design and Integration</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
-                  <p class="text-xl text-primary font-bold tracking-tight py-5">
-                    Diffco supplied us with the skilled engineers we needed to
-                    meet our ambitious goals. Their account manager proactively
-                    addressed concerns, ensuring our expectations were met.
-                  </p>
-                  <div class="flex items-center gap-4">
-                    <img
-                      src="assets/images/brands/brand_03.png"
-                      alt=""
-                      class="max-w-32"
-                    />
-                    <p class="text-xs flex text-yellow-500">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </p>
-                    <span class="text-primary font-bold">5.0</span>
-                  </div>
-                  <div class="flex items-center gap-2 mt-4">
-                    <img
-                      src="assets/images/testimonial/03.png"
-                      alt=""
-                      class="scale-[.70]"
-                    />
-                    <div>
-                      <h1 class="text-lg text-primary tracking-tight font-bold">
-                        Pete Gualfetti
-                      </h1>
-                      <p class="text-sm">Head of Design and Integration</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
-                  <p class="text-xl text-primary font-bold tracking-tight py-5">
+                  <p class="text-xl text-zinc-300 font-semibold tracking-tight py-5">
                     Diffco supplied us with the skilled engineers we needed to
                     meet our ambitious goals. Their account manager proactively
                     addressed concerns, ensuring our expectations were met.
@@ -1153,7 +1064,115 @@
                       <span><i class="fa-solid fa-star"></i></span>
                       <span><i class="fa-solid fa-star"></i></span>
                     </p>
-                    <span class="text-primary font-bold">5.0</span>
+                    <span class="text-zinc-300 font-bold">5.0</span>
+                  </div>
+                  <div class="flex items-center gap-2 mt-4">
+                    <img
+                      src="assets/images/testimonial/01.png"
+                      alt=""
+                      class="scale-[.70]"
+                    />
+                    <div>
+                      <h1 class="text-lg text-zinc-300 tracking-tight font-bold">
+                        Pete Gualfetti
+                      </h1>
+                      <p class="text-sm">Head of Design and Integration</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
+                  <p class="text-xl text-zinc-300 font-semibold tracking-tight py-5">
+                    Diffco supplied us with the skilled engineers we needed to
+                    meet our ambitious goals. Their account manager proactively
+                    addressed concerns, ensuring our expectations were met.
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="assets/images/brands/brand_05.png"
+                      alt=""
+                      class="max-w-32"
+                    />
+                    <p class="text-xs flex text-yellow-500">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </p>
+                    <span class="text-zinc-300 font-bold">5.0</span>
+                  </div>
+                  <div class="flex items-center gap-2 mt-4">
+                    <img
+                      src="assets/images/testimonial/02.png"
+                      alt=""
+                      class="scale-[.70]"
+                    />
+                    <div>
+                      <h1 class="text-lg text-zinc-300 tracking-tight font-bold">
+                        Pete Gualfetti
+                      </h1>
+                      <p class="text-sm">Head of Design and Integration</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
+                  <p class="text-xl text-zinc-300 font-semibold tracking-tight py-5">
+                    Diffco supplied us with the skilled engineers we needed to
+                    meet our ambitious goals. Their account manager proactively
+                    addressed concerns, ensuring our expectations were met.
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="assets/images/brands/brand_05.png"
+                      alt=""
+                      class="max-w-32"
+                    />
+                    <p class="text-xs flex text-yellow-500">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </p>
+                    <span class="text-zinc-300 font-bold">5.0</span>
+                  </div>
+                  <div class="flex items-center gap-2 mt-4">
+                    <img
+                      src="assets/images/testimonial/03.png"
+                      alt=""
+                      class="scale-[.70]"
+                    />
+                    <div>
+                      <h1 class="text-lg text-zinc-300 tracking-tight font-bold">
+                        Pete Gualfetti
+                      </h1>
+                      <p class="text-sm">Head of Design and Integration</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-solid fa-quote-right text-gray-300 text-3xl"></i>
+                  <p class="text-xl text-zinc-300 font-semibold tracking-tight py-5">
+                    Diffco supplied us with the skilled engineers we needed to
+                    meet our ambitious goals. Their account manager proactively
+                    addressed concerns, ensuring our expectations were met.
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="assets/images/brands/brand_05.png"
+                      alt=""
+                      class="max-w-32"
+                    />
+                    <p class="text-xs flex text-yellow-500">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </p>
+                    <span class="text-zinc-300 font-bold">5.0</span>
                   </div>
                   <div class="flex items-center gap-2 mt-4">
                     <img
@@ -1162,7 +1181,7 @@
                       class="scale-[.70]"
                     />
                     <div>
-                      <h1 class="text-lg text-primary tracking-tight font-bold">
+                      <h1 class="text-lg text-zinc-300 tracking-tight font-bold">
                         Pete Gualfetti
                       </h1>
                       <p class="text-sm">Head of Design and Integration</p>
@@ -1171,107 +1190,90 @@
                 </div>
               </div>
               <div
-                class="swiper-button-prev !size-10 rounded-full !text-white bg-primary !-left-0 lg:!top-[80%]"
+                class="swiper-button-prev !size-10 rounded-full !text-white bg-primary !-left-0"
               ></div>
               <div
-                class="swiper-button-next !size-10 rounded-full !text-white bg-primary !-right-0 lg:!top-[80%]"
+                class="swiper-button-next !size-10 rounded-full !text-white bg-primary !-right-0"
               ></div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
-        </div>
       </section>
-      <!-- end send email section -->
+      <!-- end client feedback section -->
     </main>
     <!-- end main section -->
 
     <!-- start footer section -->
-    <footer class="bg-[#ecf4ff]">
-      <div class="flex flex-col md:flex-row gap-8 container md:pb-10">
-        <div>
+    <footer class="bg-black text-white">
+      <div class="flex flex-col md:flex-row gap-8 container md:pb-28">
+        <div class="basis-4/12">
           <a href=""
-            ><img src="./assets/images/logo/logo1.png" alt="" class="max-w-36"
+            ><img src="./assets/images/logo/logo.png" alt="" class="max-w-36"
           /></a>
-          <p
-            class="max-w-[30rem] mt-5 mb-9 font-semibold text-lg tracking-tight"
-          >
+          <p class="max-w-[20rem] mt-5 mb-9 text-base">
             Lorem Experience Design Agency focusing on building functional,
             simple, human-centered digital products for future.
           </p>
-          <a href="" class="btn-primary inline-block">contact us now</a>
+          <button class="btn !w-40 !h-12 text-sm">
+            <a href="" class="!capitalize">Contact us now</a>
+          </button>
         </div>
-        <div class="md:ml-auto flex justify-between md:gap-[10rem]">
-          <ul class="flex flex-col gap-2 tracking-tight">
-            <li class="font-semibold mb-2">QUICK LINK</li>
-            <li class="font-medium"><a href="">Home</a></li>
-            <li class="font-medium"><a href="">Work</a></li>
-            <li class="font-medium"><a href="">Contact</a></li>
-            <li class="font-medium"><a href="">Carrer</a></li>
-            <li class="font-medium"><a href="">Blog</a></li>
+        <div class="basis-4/12 flex gap-16 sm:pl-8">
+          <ul class="flex flex-col gap-2 tracking-tight text-zinc-300">
+            <li class="font-semibold mb-3 text-xl">Important Links</li>
+            <li class="font-medium hover:text-white"><a href="">Home</a></li>
+            <li class="font-medium hover:text-white"><a href="">Work</a></li>
+            <li class="font-medium hover:text-white"><a href="">Contact</a></li>
+            <li class="font-medium hover:text-white"><a href="">Carrer</a></li>
+            <li class="font-medium hover:text-white"><a href="">Blog</a></li>
           </ul>
-          <ul class="flex flex-col gap-2 tracking-tight">
-            <li class="font-semibold mb-2">SERVICES</li>
-            <li class="font-medium"><a href="">UI/UX Design</a></li>
-            <li class="font-medium"><a href="">Web Design</a></li>
-            <li class="font-medium"><a href="">Branding</a></li>
-            <li class="font-medium"><a href="">Webflow</a></li>
-            <li class="font-medium"><a href="">Mobile App</a></li>
-            <li class="font-medium"><a href="">Saas Design</a></li>
-            <li class="font-medium"><a href="">MVP Development</a></li>
-            <li class="font-medium"><a href="">Design System</a></li>
+          <ul class="flex flex-col gap-2 tracking-tight text-zinc-300">
+            <li class="font-semibold mb-3 text-xl">Our Services</li>
+            <li class="font-medium hover:text-white">
+              <a href="">UI/UX Design</a>
+            </li>
+            <li class="font-medium hover:text-white">
+              <a href="">Website Design</a>
+            </li>
+            <li class="font-medium hover:text-white">
+              <a href="">Shopify Website</a>
+            </li>
+            <li class="font-medium hover:text-white"><a href="">Webflow</a></li>
+            <li class="font-medium hover:text-white">
+              <a href="">Mobile App</a>
+            </li>
+            <li class="font-medium hover:text-white"><a href="">SEO</a></li>
           </ul>
+        </div>
+        <div class="basis-4/12">
+          <h5 class="font-semibold mb-3 text-xl">Our Address</h5>
+          <p class="text-[15px] max-w-[20rem]">
+            House 203, Flat B7, Level 4 Road 2, Avenue 3, Mirpur DOHS
+            Dhaka-1216, Bangladesh
+          </p>
+          <h5 class="font-semibold my-3 text-xl">Contact Information</h5>
+          <p class="text-[15px]"><i class="fa-solid fa-phone text-red-600 mr-2 text-sm"></i><a href="">+088123456789</a></p>
+          <p class="text-[15px] mt-1"><i class="fa-solid fa-envelope text-red-600 mr-2"></i><a href="mailto:info@sheba.com">info@sheba.com</a></p>
         </div>
       </div>
-      <div class="border-y">
+      <div class="border-t border-zinc-600">
         <div
-          class="container md:py-8 flex justify-center lg:justify-start flex-wrap gap-1 sm:gap-4"
+          class="container py-4 md:py-6 flex flex-col gap-3 sm:flex-row items-center justify-between"
         >
-          <img
-            src="../assets/images/brands/footer-1.webp"
-            alt=""
-            class="sm:w-auto w-[45%]"
-          />
-          <img
-            src="../assets/images/brands/footer-2.webp"
-            alt=""
-            class="sm:w-auto w-[45%]"
-          />
-          <img
-            src="../assets/images/brands/footer-3.webp"
-            alt=""
-            class="sm:w-auto w-[45%]"
-          />
-          <img
-            src="../assets/images/brands/footer-4.webp"
-            alt=""
-            class="sm:w-auto w-[45%]"
-          />
-          <img
-            src="../assets/images/brands/footer-5.webp"
-            alt=""
-            class="sm:w-auto w-[45%]"
-          />
-          <img
-            src="../assets/images/brands/footer-6.webp"
-            alt=""
-            class="sm:w-auto w-[45%]"
-          />
-        </div>
-      </div>
-      <div
-        class="container py-4 flex flex-col gap-3 sm:flex-row items-center justify-between"
-      >
-        <p><a href="">Privacy Policy</a> | &copy; 2024, Creative Sheba ltd.</p>
-        <div class="text-2xl text-black1 flex gap-6">
-          <a href="" class="hover:text-black"
-            ><i class="fa-brands fa-square-facebook"></i
-          ></a>
-          <a href="" class="hover:text-black"
-            ><i class="fa-brands fa-square-x-twitter"></i
-          ></a>
-          <a href="" class="hover:text-black"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
+          <p>
+            <a href="">Privacy Policy</a> | &copy; 2024, Creative Sheba ltd.
+          </p>
+          <div class="text-2xl text-zinc-400 flex gap-6">
+            <a href="" class="hover:text-white transition-all duration-300"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="" class="hover:text-white transition-all duration-300"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+            <a href="" class="hover:text-white transition-all duration-300"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
         </div>
       </div>
     </footer>

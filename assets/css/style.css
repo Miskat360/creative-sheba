@@ -189,18 +189,10 @@ p {
 }
 /* navbar scrolling effect */
 header .navScrollEfect{
-  background-color: white;
-  border-color: gainsboro
+  background-color: black;
 }
 header .navScrollEfect ul{
-  color: rgb(31 41 55);
-  font-weight: 500;
-}
-header .navScrollEfect a img[src="assets/images/logo/logo.png"]{
-  opacity: 0;
-}
-header .navScrollEfect a img[src="assets/images/logo/logo1.png"]{
-  display: block;
+  color: gainsboro;
 }
 /* blog image anime */
 .blog-img figure::before {
